@@ -177,7 +177,10 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML]-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML] &#54028;&#53944;1-1&#54924;&#52264; &#48156;&#54364;&#51088; &#51060;&#49345;&#50676;<a class="anchor-link" href="#&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML]-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#182;</a></h1><h2 id="&#49828;&#52860;&#46972;&#47484;-&#49324;&#50857;&#54644;&#50556;-&#54616;&#45716;-&#51060;&#50976;&#45716;?">&#49828;&#52860;&#46972;&#47484; &#49324;&#50857;&#54644;&#50556; &#54616;&#45716; &#51060;&#50976;&#45716;?<a class="anchor-link" href="#&#49828;&#52860;&#46972;&#47484;-&#49324;&#50857;&#54644;&#50556;-&#54616;&#45716;-&#51060;&#50976;&#45716;?">&#182;</a></h2><ul>
+<h1 id="&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML]-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML] &#54028;&#53944;1-1&#54924;&#52264; &#48156;&#54364;&#51088; &#51060;&#49345;&#50676;<a class="anchor-link" href="#&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML]-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#182;</a></h1><h2 id="&#49828;&#52860;&#46972;-&#45796;&#50868;&#47196;&#46300;-&#48143;-&#50672;&#46041;">&#49828;&#52860;&#46972; &#45796;&#50868;&#47196;&#46300; &#48143; &#50672;&#46041;<a class="anchor-link" href="#&#49828;&#52860;&#46972;-&#45796;&#50868;&#47196;&#46300;-&#48143;-&#50672;&#46041;">&#182;</a></h2><ul>
+<li>Jupyter 연동 : <a href="https://github.com/alexarchambault/jupyter-scala">https://github.com/alexarchambault/jupyter-scala</a></li>
+</ul>
+<h2 id="&#49828;&#52860;&#46972;&#47484;-&#49324;&#50857;&#54644;&#50556;-&#54616;&#45716;-&#51060;&#50976;&#45716;?">&#49828;&#52860;&#46972;&#47484; &#49324;&#50857;&#54644;&#50556; &#54616;&#45716; &#51060;&#50976;&#45716;?<a class="anchor-link" href="#&#49828;&#52860;&#46972;&#47484;-&#49324;&#50857;&#54644;&#50556;-&#54616;&#45716;-&#51060;&#50976;&#45716;?">&#182;</a></h2><ul>
 <li>풍부한 표현력(1급 함수, 클로져)</li>
 <li>간결함 (타입 추론, 함수 리터럴)</li>
 <li>자바와의 혼용 가능 (자바 라이브러리 재사용 가능, 자바 도구를 재사용 가능, 성능의 손실 없이 사용 가능)</li>
@@ -204,7 +207,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
@@ -222,7 +225,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res137</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">2</span></pre>
+<pre><span class="ansicyan">res1</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">2</span></pre>
 </div>
 
 </div>
@@ -238,6 +241,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#44050;">&#44050;<a class="anchor-link" href="#&#44050;">&#182;</a></h2><ul>
 <li>식의 결과에 이름을 붙일 수 있다.</li>
+<li>val은 자바의 final 변수와 유사하고 이미 할당된 변수는 재할당 될 수 없다. 참조하고 있는 객체는 변경될 수 있음.</li>
 </ul>
 
 </div>
@@ -245,7 +249,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">two</span> <span class="k">=</span> <span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
@@ -279,6 +283,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#48320;&#49688;">&#48320;&#49688;<a class="anchor-link" href="#&#48320;&#49688;">&#182;</a></h2><ul>
 <li>값과 이름의 관계를 변경할 필요가 있다면, var를 사용해야만 한다.</li>
+<li>var는 자바의 non-final 변수와 유사하고 재할당이 가능하다.</li>
 </ul>
 
 </div>
@@ -286,7 +291,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">var</span> <span class="n">name</span> <span class="k">=</span> <span class="s">&quot;steve&quot;</span>
@@ -315,7 +320,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[168]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">name</span> <span class="k">=</span> <span class="s">&quot;marius&quot;</span>
@@ -352,7 +357,8 @@ div#notebook {
 <li>스칼라에서는 함수 인자의 타입을 명시해야 한다. 인터프리터는 기꺼이 타입 시그니쳐를 다시 표시해줄 것이다.</li>
 <li>인자가 없는 함수의 경우 호출시 괄호를 생략할 수도 있다.</li>
 <li>이름없는 함수</li>
-<li>함수가 여러 식으로 이루어진 경우, {}를 사용해 이를 위한 공간을 만들 수 있다.</li>
+<li>함수가 여러 식으로 이루어진 경우, {}를 사용해 이를 위한 공간을 만들 수 있다.
+<img src="http://www.slipp.net/wiki/download/attachments/23199906/image2015-4-27%201%3A33%3A10.png?version=1&modificationDate=1430065988000&api=v2" alt="그림참고"></li>
 </ul>
 
 </div>
@@ -360,7 +366,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[169]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">addOne</span><span class="o">(</span><span class="n">m</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span>
@@ -389,7 +395,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[170]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">three</span> <span class="k">=</span> <span class="n">addOne</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
@@ -418,7 +424,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[171]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">three</span><span class="o">()</span> <span class="k">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
@@ -447,7 +453,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[172]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">three</span><span class="o">()</span>
@@ -465,7 +471,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res144</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">3</span></pre>
+<pre><span class="ansicyan">res8</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">3</span></pre>
 </div>
 
 </div>
@@ -476,7 +482,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[173]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">three</span>
@@ -494,7 +500,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res145</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">3</span></pre>
+<pre><span class="ansicyan">res9</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">3</span></pre>
 </div>
 
 </div>
@@ -505,10 +511,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[174]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-scala"><pre><span class="o">(</span><span class="n">x</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<div class=" highlight hl-scala"><pre><span class="o">(</span><span class="n">x</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1">// Anonymous Functions</span>
 </pre></div>
 
 </div>
@@ -523,7 +529,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res146</span>: <span class="ansigreen">Int =&gt; Int</span> = &lt;function1&gt;</pre>
+<pre><span class="ansicyan">res10</span>: <span class="ansigreen">Int =&gt; Int</span> = &lt;function1&gt;</pre>
 </div>
 
 </div>
@@ -534,10 +540,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[175]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-scala"><pre><span class="n">res21</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
+<div class=" highlight hl-scala"><pre><span class="n">res10</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
 </pre></div>
 
 </div>
@@ -552,7 +558,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res147</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">2</span></pre>
+<pre><span class="ansicyan">res11</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">2</span></pre>
 </div>
 
 </div>
@@ -563,7 +569,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">addOne</span> <span class="k">=</span> <span class="o">(</span><span class="n">x</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
@@ -790,7 +796,11 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#52964;&#47532;-&#54632;&#49688;(Curried-functions)">&#52964;&#47532; &#54632;&#49688;(Curried functions)<a class="anchor-link" href="#&#52964;&#47532;-&#54632;&#49688;(Curried-functions)">&#182;</a></h2><ul>
 <li>떄로 함수의 인자중 일부를 적용하고, 나머지는 나중에 적용하게 남겨두는 것이 더 쓸모있는 경우가 있다.</li>
-<li>다음은 두 수를 곱하는 곱셈기를 만들 수 있는 함수이다. 첫 호출시 승수를 지정하고, 나중에 피승수를 지정할 수 있다.</li>
+<li><p>다음은 두 수를 곱하는 곱셈기를 만들 수 있는 함수이다. 첫 호출시 승수를 지정하고, 나중에 피승수를 지정할 수 있다.</p>
+</li>
+<li><p>함수의 첫번째 인자를 넘기면 그 결과로 두번째 인자를 받는 함수가 반환이 되고 반환된 함수에 두번째 인자를 넘기면 기존-커리되지 않은 함수-의 결과가 변환됨.</p>
+</li>
+<li>A(x,y) -&gt; z인 함수를 C'A(x)(y) -&gt; z로 바꾼다고 생각하면 됨.</li>
 </ul>
 
 </div>
@@ -1028,6 +1038,207 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">justFun</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">){</span>
+    <span class="k">val</span> <span class="n">sum</span> <span class="k">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">&quot;result : &quot;</span> <span class="o">+</span> <span class="n">sum</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>defined <span class="ansigreen">function </span><span class="ansicyan">justFun</span></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">curriedFun</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">)(</span><span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">){</span>
+    <span class="k">val</span> <span class="n">sum</span> <span class="k">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">&quot;result : &quot;</span> <span class="o">+</span> <span class="n">sum</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>defined <span class="ansigreen">function </span><span class="ansicyan">curriedFun</span></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="n">justFun</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>result : 7
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="n">curriedFun</span><span class="o">(</span><span class="mi">3</span><span class="o">)(</span><span class="mi">4</span><span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>result : 7
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">one</span> <span class="k">=</span> <span class="n">curriedFun</span><span class="o">(</span><span class="mi">3</span><span class="o">)</span><span class="k">_</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre><span class="ansicyan">one</span>: <span class="ansigreen">Int =&gt; Unit</span> = &lt;function1&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="n">one</span><span class="o">(</span><span class="mi">4</span><span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>result : 7
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1042,7 +1253,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[191]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">capitalizeAll</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">String*</span><span class="o">)</span> <span class="k">=</span> <span class="o">{</span>
@@ -1075,7 +1286,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[192]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">capitalizeAll</span><span class="o">(</span><span class="s">&quot;rarity&quot;</span><span class="o">,</span> <span class="s">&quot;applejack&quot;</span><span class="o">)</span>
@@ -1093,7 +1304,69 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res164</span>: <span class="ansigreen">Seq[String]</span> = <span class="ansiyellow">ArrayBuffer</span>(<span class="ansigreen">&quot;Rarity&quot;</span>, <span class="ansigreen">&quot;Applejack&quot;</span>)</pre>
+<pre><span class="ansicyan">res28</span>: <span class="ansigreen">Seq[String]</span> = <span class="ansiyellow">ArrayBuffer</span>(<span class="ansigreen">&quot;Rarity&quot;</span>, <span class="ansigreen">&quot;Applejack&quot;</span>)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">sum</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Int*</span><span class="o">)</span> <span class="k">=</span> <span class="o">{</span>
+      <span class="k">var</span> <span class="n">result</span> <span class="k">=</span> <span class="mi">0</span>
+      <span class="k">for</span> <span class="o">(</span><span class="n">arg</span> <span class="k">&lt;-</span> <span class="n">args</span><span class="o">)</span> <span class="n">result</span> <span class="o">+=</span> <span class="n">arg</span>
+      <span class="n">result</span>
+<span class="o">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>defined <span class="ansigreen">function </span><span class="ansicyan">sum</span></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">s</span> <span class="k">=</span> <span class="n">sum</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span><span class="mi">9</span><span class="o">,</span><span class="mi">16</span><span class="o">,</span><span class="mi">25</span><span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre><span class="ansicyan">s</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">55</span></pre>
 </div>
 
 </div>
@@ -1110,7 +1383,6 @@ div#notebook {
 <h2 id="&#53364;&#47000;&#49828;">&#53364;&#47000;&#49828;<a class="anchor-link" href="#&#53364;&#47000;&#49828;">&#182;</a></h2><ul>
 <li>클래스 안에서 메소드는 def로, 필드는 val로 정의한다. 메소드는 단지 클래스(객체)의 상태를 억세스할 수 있는 함수에 지나지 않는다.</li>
 <li>생성자 : 스칼라에서는 생성자가 특별한 메소드로 따로 존재하지 않는다. 클래스 몸체에서 메소드 정의 부분 밖에 있는 모든 코드가 생성자 코드가 된다. Calculator 예제를 생성자가 인자를 받아 내부 상태를 초기화하도록 변경해 보자.</li>
-<li>식 : BasicCalculator 예제를 보면 스칼라가 식 중심의 언어란 점을 잘 알 수 있다. color 값은 if/else 식에 의해 초기화되었다. 스칼라는 대부분의 구성 요소가 문(statement, 반환값이 없는 문장)이 아니고 식(expression, 결과를 반환하는 문장)이라는 점에서 식 중심의 언어이다.</li>
 </ul>
 
 </div>
@@ -1118,7 +1390,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[193]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">class</span> <span class="nc">Calculator</span> <span class="o">{</span>
@@ -1150,7 +1422,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[194]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">calc</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Calculator</span>
@@ -1168,7 +1440,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">calc</span>: <span class="ansigreen">cmd166.INSTANCE.$ref$cmd165.Calculator</span> = cmd165$$user$Calculator@1e776f48</pre>
+<pre><span class="ansicyan">calc</span>: <span class="ansigreen">cmd32.INSTANCE.$ref$cmd31.Calculator</span> = cmd31$$user$Calculator@20d7eefc</pre>
 </div>
 
 </div>
@@ -1179,7 +1451,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[195]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">)</span>
@@ -1197,7 +1469,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res167</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">3</span></pre>
+<pre><span class="ansicyan">res33</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">3</span></pre>
 </div>
 
 </div>
@@ -1208,7 +1480,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[196]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">calc</span><span class="o">.</span><span class="n">brand</span>
@@ -1226,7 +1498,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res168</span>: <span class="ansigreen">String</span> = <span class="ansigreen">&quot;HP&quot;</span></pre>
+<pre><span class="ansicyan">res34</span>: <span class="ansigreen">String</span> = <span class="ansigreen">&quot;HP&quot;</span></pre>
 </div>
 
 </div>
@@ -1237,7 +1509,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[197]:</div>
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">class</span> <span class="nc">Calculator</span><span class="o">(</span><span class="n">brand</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span> <span class="o">{</span>
@@ -1276,7 +1548,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[198]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">calc</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;HP&quot;</span><span class="o">)</span>
@@ -1294,7 +1566,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">calc</span>: <span class="ansigreen">cmd170.INSTANCE.$ref$cmd169.Calculator</span> = cmd169$$user$Calculator@72417bfb</pre>
+<pre><span class="ansicyan">calc</span>: <span class="ansigreen">cmd42.INSTANCE.$ref$cmd35.Calculator</span> = cmd35$$user$Calculator@35394075</pre>
 </div>
 
 </div>
@@ -1305,7 +1577,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[199]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">calc</span><span class="o">.</span><span class="n">color</span>
@@ -1323,7 +1595,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res171</span>: <span class="ansigreen">String</span> = <span class="ansigreen">&quot;black&quot;</span></pre>
+<pre><span class="ansicyan">res41</span>: <span class="ansigreen">String</span> = <span class="ansigreen">&quot;white&quot;</span></pre>
 </div>
 
 </div>
@@ -1346,7 +1618,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[200]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">class</span> <span class="nc">C</span> <span class="o">{</span>
@@ -1379,7 +1651,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[201]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">c</span> <span class="k">=</span> <span class="k">new</span> <span class="n">C</span>
@@ -1397,7 +1669,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">c</span>: <span class="ansigreen">cmd173.INSTANCE.$ref$cmd172.C</span> = cmd172$$user$C@1aae85ee</pre>
+<pre><span class="ansicyan">c</span>: <span class="ansigreen">cmd44.INSTANCE.$ref$cmd43.C</span> = cmd43$$user$C@40a869b</pre>
 </div>
 
 </div>
@@ -1408,7 +1680,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[202]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">c</span><span class="o">.</span><span class="n">minc</span>
@@ -1437,7 +1709,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[203]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">c</span><span class="o">.</span><span class="n">finc</span>
@@ -1455,7 +1727,173 @@ div#notebook {
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res175</span>: <span class="ansigreen">() =&gt; Unit</span> = &lt;function0&gt;</pre>
+<pre><span class="ansicyan">res46</span>: <span class="ansigreen">() =&gt; Unit</span> = &lt;function0&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">fMsg</span> <span class="k">=</span> <span class="o">()</span> <span class="k">=&gt;</span> <span class="s">&quot;Hello&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre><span class="ansicyan">fMsg</span>: <span class="ansigreen">() =&gt; java.lang.String</span> = &lt;function0&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">mMsg</span><span class="o">()</span> <span class="k">=</span> <span class="s">&quot;Hello&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>defined <span class="ansigreen">function </span><span class="ansicyan">mMsg</span></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="n">println</span><span class="o">(</span><span class="n">mMsg</span><span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="n">println</span><span class="o">(</span><span class="n">fMsg</span><span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;function0&gt;
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="n">println</span><span class="o">(</span><span class="n">fMsg</span><span class="o">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre></pre>
 </div>
 
 </div>
@@ -1471,7 +1909,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#49345;&#49549;">&#49345;&#49549;<a class="anchor-link" href="#&#49345;&#49549;">&#182;</a></h2><ul>
 <li>See Also “효율적인 스칼라(effective scala)”에서는 하위클래스가 상위클래스와 실제 다르지 않을 경우 타입 별명이 extends(확장)보다 더 낫다고 말한다. 스칼라 여행(Tour of Scala)에서는 상속하기(Subclassing)에 대해 다루고 있다.</li>
-<li>매소드 중복정의(Overloading)</li>
+<li>매소드 중복정의(Overloading) ; 함수를 상속받아 재정의(추상메소드는 그냥 진행, 그렇지 않는 경우 메소드 앞에 override를 붙임)</li>
 <li>추상클래스 : 추상 클래스(abstract class)는 메소드 정의는 있지만 구현은 없는 클래스이다. 대신 이를 상속한 하위클래스에서 메소드를 구현하게 된다. 추상 클래스의 인스턴스를 만들 수는 없다.</li>
 </ul>
 
@@ -1623,7 +2061,7 @@ div#notebook {
 <pre>
 Compilation Failed
 <span class="ansired">Main.scala:44: class Shape is abstract; cannot be instantiated</span>
-  new Shape 
+  new Shape 
   ^</pre>
 </div>
 </div>
@@ -1674,6 +2112,7 @@ Compilation Failed
 <li>당신이 이런 질문을 한 첫번째 사람은 아니다. 스택 오버플로우에서 트레잇과 추상 클래스의 비교, 추상 클래스와 트레잇의 차이, 또는 스칼라 프로그래밍: 트레잇냐 아니냐 그것이 문제로다? 등을 참조하라.</li>
 </ul>
 </li>
+<li>자바의 Interface 기능을 확장한 개념.</li>
 </ul>
 
 </div>
@@ -1681,7 +2120,7 @@ Compilation Failed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[210]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">trait</span> <span class="nc">Car</span> <span class="o">{</span>
@@ -1717,7 +2156,7 @@ defined <span class="ansigreen">trait </span><span class="ansicyan">Shiny</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[211]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">class</span> <span class="nc">BMW</span> <span class="k">extends</span> <span class="nc">Car</span> <span class="o">{</span>
@@ -1748,7 +2187,7 @@ defined <span class="ansigreen">trait </span><span class="ansicyan">Shiny</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[212]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">class</span> <span class="nc">BMW</span> <span class="k">extends</span> <span class="nc">Car</span> <span class="k">with</span> <span class="nc">Shiny</span> <span class="o">{</span>
@@ -1784,7 +2223,10 @@ defined <span class="ansigreen">trait </span><span class="ansicyan">Shiny</span>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#53440;&#51077;">&#53440;&#51077;<a class="anchor-link" href="#&#53440;&#51077;">&#182;</a></h2><ul>
-<li>앞에서 숫자 타입중 하나인 Int를 인자로 받는 함수를 보았다. 모든 타입의 값을 처리할 수 있는 일반적(generic)인 함수를 만들 수도 있다. 일반적 함수를 만들 때는 각괄호([])안에 타입 매개변수를 추가한다. 아래는 키와 값을 가지는 일반적인 캐시를 보여준다.</li>
+<li><p>앞에서 숫자 타입중 하나인 Int를 인자로 받는 함수를 보았다. 모든 타입의 값을 처리할 수 있는 일반적(generic)인 함수를 만들 수도 있다. 일반적 함수를 만들 때는 각괄호([])안에 타입 매개변수를 추가한다. 아래는 키와 값을 가지는 일반적인 캐시를 보여준다.</p>
+</li>
+<li><p>제네릭함이란 코드를 타입에 대하여 파라미터화 할 수 있는 능력이다. 이해를 돕기 위해 하나의 예를 들어 보자. 연결 리스트 라이브러리를 작성하는 프로그래머는 리스트의 원소 타입을 도대체 무엇으로 해야 할지 고민에 빠지게 된다. 이 연결 리스트는 서로 다른 많은 상황에서 사용 될 수 있기 때문에 원소의 타입이 반드시 Int 또는 반드시 Double이 될 것이라 미리 결정하는 것은 불가능하다. 이렇게 결정해 두는 일은 완전히 임의적이며 라이브러리의 사용에 있어 필요 이상의 심한 제약으로 작용 한다.</p>
+</li>
 </ul>
 
 </div>
@@ -1792,7 +2234,7 @@ defined <span class="ansigreen">trait </span><span class="ansicyan">Shiny</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[213]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">trait</span> <span class="nc">Cache</span><span class="o">[</span><span class="kt">K</span>, <span class="kt">V</span><span class="o">]</span> <span class="o">{</span>
@@ -1825,7 +2267,7 @@ defined <span class="ansigreen">trait </span><span class="ansicyan">Shiny</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[213]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">remove</span><span class="o">[</span><span class="kt">K</span><span class="o">](</span><span class="n">key</span><span class="k">:</span> <span class="kt">K</span><span class="o">)</span>
@@ -1843,7 +2285,7 @@ defined <span class="ansigreen">trait </span><span class="ansicyan">Shiny</span>
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansired">&lt;console&gt;:1: &apos;=&apos; expected but eof found.</span>
-def remove[K](key: K)
+def remove[K](key: K)
                      ^</pre>
 </div>
 </div>
@@ -1860,6 +2302,7 @@ def remove[K](key: K)
 <h2 id="apply-&#47700;&#49548;&#46300;">apply &#47700;&#49548;&#46300;<a class="anchor-link" href="#apply-&#47700;&#49548;&#46300;">&#182;</a></h2><ul>
 <li>apply 메소드를 사용하면 클래스나 객체의 용도가 주로 하나만 있는 경우를 아주 멋지게 표현할 수 있다.</li>
 <li>apply를 정의하면 메소드를 호출하듯 객체 인스턴스를 호출할 수 있다. 객체 인스턴스를 호출하면 그 객체(클래스)에 정의된 apply()가 호출된다. 자세한 것은 나중에 살펴볼 것이다.</li>
+<li>apply는 말 그대로 어떤 함수를 적용시킨다는 의미, apply와 함께 들어오는 인자에 대해서 어떤 함수를 적용 시킨다는 것.</li>
 </ul>
 
 </div>
@@ -2035,6 +2478,93 @@ def remove[K](key: K)
 
 <div class="output_text output_subarea ">
 <pre><span class="ansicyan">res190</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">0</span></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">f1</span> <span class="k">=</span> <span class="o">(</span><span class="n">x</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">y</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre><span class="ansicyan">f1</span>: <span class="ansigreen">(Int, Int) =&gt; Int</span> = &lt;function2&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="n">f1</span><span class="o">.</span><span class="n">apply</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre><span class="ansicyan">res67</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">5</span></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="n">f1</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre><span class="ansicyan">res68</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">5</span></pre>
 </div>
 
 </div>
@@ -2368,7 +2898,7 @@ defined <span class="ansigreen">object </span><span class="ansicyan">Bar</span><
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[228]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">package</span> <span class="nn">com.twitter.example</span>
@@ -2376,7 +2906,7 @@ defined <span class="ansigreen">object </span><span class="ansicyan">Bar</span><
 <span class="k">object</span> <span class="nc">colorHolder</span> <span class="o">{</span>
   <span class="k">val</span> <span class="nc">BLUE</span> <span class="k">=</span> <span class="s">&quot;Blue&quot;</span>
   <span class="k">val</span> <span class="nc">RED</span> <span class="k">=</span> <span class="s">&quot;Red&quot;</span>
-      <span class="o">}</span>
+<span class="o">}</span>
 </pre></div>
 
 </div>
@@ -2391,8 +2921,50 @@ defined <span class="ansigreen">object </span><span class="ansicyan">Bar</span><
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansired">&lt;console&gt;:3: &apos;{&apos; expected but &apos;;&apos; found.</span>
-object colorHolder {
+object colorHolder {
 ^</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">package</span> <span class="nn">a</span> <span class="o">{</span>
+       <span class="k">package</span> <span class="nn">b</span> <span class="o">{</span>
+           <span class="k">class</span> <span class="nc">A</span>
+           <span class="k">package</span> <span class="nn">test</span> <span class="o">{</span>
+               <span class="k">class</span> <span class="nc">ATest</span>
+           <span class="o">}</span>
+       <span class="o">}</span>
+    <span class="o">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+Preprocessor: &apos;package a {
+       package b {
+           class A
+           package test {
+               class ATest
+           }
+       }
+    }&apos;:
+Splitter:0 / End:0 ...&quot;package a &quot;</pre>
 </div>
 </div>
 
@@ -2421,7 +2993,7 @@ object colorHolder {
 <pre>
 Compilation Failed
 <span class="ansired">Main.scala:42: object twitter is not a member of package com</span>
-println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
+println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
                                ^</pre>
 </div>
 </div>
@@ -2469,6 +3041,8 @@ println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#54056;&#53556;-&#47588;&#52845;">&#54056;&#53556; &#47588;&#52845;<a class="anchor-link" href="#&#54056;&#53556;-&#47588;&#52845;">&#182;</a></h2><ul>
 <li>패턴 매치는 스칼라에서 가장 유용한 기능 중 하나이다. 값에 대해 매칭할 수 있다.</li>
+<li>기본적인 컨셉트는 자바의 switch 와 비슷하다. 하지만 자바의 switch 는 constant 값에만 적용할수 있는 반면에 스칼라의 페턴매칭은 constant 값 이외에도 case class, variable, collection 등등 여러가지 유용한 패턴을 사용할수 있다.</li>
+<li>match도 expression이다. 즉, 값을 반환한다. 명시적으로 break; 를 해야 하는 switch와 달리 match를 찾은 이후엔 계속 matching을 시도하지 않는다. 어떤 패턴에도 매칭되지 않으면 MatchError 예외를 던진다. 예외를 피하려면  case _ =&gt;  를 명시하는 방법을 써야 한다.</li>
 </ul>
 
 </div>
@@ -2476,7 +3050,7 @@ println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[231]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">times</span> <span class="k">=</span> <span class="mi">1</span>
@@ -2501,7 +3075,7 @@ println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
 
 <div class="output_text output_subarea ">
 <pre><span class="ansicyan">times</span>: <span class="ansigreen">Int</span> = <span class="ansigreen">1</span>
-<span class="ansicyan">res201_1</span>: <span class="ansigreen">java.lang.String</span> = <span class="ansigreen">&quot;one&quot;</span></pre>
+<span class="ansicyan">res73_1</span>: <span class="ansigreen">java.lang.String</span> = <span class="ansigreen">&quot;one&quot;</span></pre>
 </div>
 
 </div>
@@ -2512,7 +3086,7 @@ println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[232]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">times</span> <span class="k">match</span> <span class="o">{</span>
@@ -2534,7 +3108,7 @@ println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res202</span>: <span class="ansigreen">java.lang.String</span> = <span class="ansigreen">&quot;one&quot;</span></pre>
+<pre><span class="ansicyan">res74</span>: <span class="ansigreen">java.lang.String</span> = <span class="ansigreen">&quot;one&quot;</span></pre>
 </div>
 
 </div>
@@ -2557,7 +3131,7 @@ println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[233]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">bigger</span><span class="o">(</span><span class="n">o</span><span class="k">:</span> <span class="kt">Any</span><span class="o">)</span><span class="k">:</span> <span class="kt">Any</span> <span class="o">=</span> <span class="o">{</span>
@@ -2606,13 +3180,13 @@ println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[234]:</div>
+<div class="prompt input_prompt">In&nbsp;[126]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">def</span> <span class="n">calcType</span><span class="o">(</span><span class="n">calc</span><span class="k">:</span> <span class="kt">Calculator</span><span class="o">)</span> <span class="k">=</span> <span class="n">calc</span> <span class="k">match</span> <span class="o">{</span>
-  <span class="k">case</span> <span class="n">calc</span><span class="o">.</span><span class="n">brand</span> <span class="o">==</span> <span class="s">&quot;hp&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">calc</span><span class="o">.</span><span class="n">model</span> <span class="o">==</span> <span class="s">&quot;20B&quot;</span> <span class="k">=&gt;</span> <span class="s">&quot;financial&quot;</span>
-  <span class="k">case</span> <span class="n">calc</span><span class="o">.</span><span class="n">brand</span> <span class="o">==</span> <span class="s">&quot;hp&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">calc</span><span class="o">.</span><span class="n">model</span> <span class="o">==</span> <span class="s">&quot;48G&quot;</span> <span class="k">=&gt;</span> <span class="s">&quot;scientific&quot;</span>
-  <span class="k">case</span> <span class="n">calc</span><span class="o">.</span><span class="n">brand</span> <span class="o">==</span> <span class="s">&quot;hp&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">calc</span><span class="o">.</span><span class="n">model</span> <span class="o">==</span> <span class="s">&quot;30B&quot;</span> <span class="k">=&gt;</span> <span class="s">&quot;business&quot;</span>
+  <span class="k">case</span> <span class="n">c</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">brand</span> <span class="o">==</span> <span class="s">&quot;hp&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">calc</span><span class="o">.</span><span class="n">model</span> <span class="o">==</span> <span class="s">&quot;20B&quot;</span> <span class="k">=&gt;</span> <span class="s">&quot;financial&quot;</span>
+  <span class="k">case</span> <span class="n">c</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">brand</span> <span class="o">==</span> <span class="s">&quot;hp&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">calc</span><span class="o">.</span><span class="n">model</span> <span class="o">==</span> <span class="s">&quot;48G&quot;</span> <span class="k">=&gt;</span> <span class="s">&quot;scientific&quot;</span>
+  <span class="k">case</span> <span class="n">c</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">brand</span> <span class="o">==</span> <span class="s">&quot;hp&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">calc</span><span class="o">.</span><span class="n">model</span> <span class="o">==</span> <span class="s">&quot;30B&quot;</span> <span class="k">=&gt;</span> <span class="s">&quot;business&quot;</span>
   <span class="k">case</span> <span class="k">_</span> <span class="k">=&gt;</span> <span class="s">&quot;unknown&quot;</span>
 <span class="o">}</span>
 </pre></div>
@@ -2626,55 +3200,12 @@ println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-Compilation Failed
-<span class="ansired">Main.scala:48: not found: value &amp;&amp;</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;20B&quot; =&gt; &quot;financial&quot;
-                          ^
-<span class="ansired">Main.scala:48: not found: value ==</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;20B&quot; =&gt; &quot;financial&quot;
-                  ^
-<span class="ansired">Main.scala:48: value brand is not a member of cmd204.this.$ref$cmd169.Calculator</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;20B&quot; =&gt; &quot;financial&quot;
-            ^
-<span class="ansired">Main.scala:48: not found: value ==</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;20B&quot; =&gt; &quot;financial&quot;
-                                        ^
-<span class="ansired">Main.scala:48: value model is not a member of cmd204.this.$ref$cmd169.Calculator</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;20B&quot; =&gt; &quot;financial&quot;
-                                  ^
-<span class="ansired">Main.scala:49: not found: value &amp;&amp;</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;48G&quot; =&gt; &quot;scientific&quot;
-                          ^
-<span class="ansired">Main.scala:49: not found: value ==</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;48G&quot; =&gt; &quot;scientific&quot;
-                  ^
-<span class="ansired">Main.scala:49: value brand is not a member of cmd204.this.$ref$cmd169.Calculator</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;48G&quot; =&gt; &quot;scientific&quot;
-            ^
-<span class="ansired">Main.scala:49: not found: value ==</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;48G&quot; =&gt; &quot;scientific&quot;
-                                        ^
-<span class="ansired">Main.scala:49: value model is not a member of cmd204.this.$ref$cmd169.Calculator</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;48G&quot; =&gt; &quot;scientific&quot;
-                                  ^
-<span class="ansired">Main.scala:50: not found: value &amp;&amp;</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;30B&quot; =&gt; &quot;business&quot;
-                          ^
-<span class="ansired">Main.scala:50: not found: value ==</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;30B&quot; =&gt; &quot;business&quot;
-                  ^
-<span class="ansired">Main.scala:50: value brand is not a member of cmd204.this.$ref$cmd169.Calculator</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;30B&quot; =&gt; &quot;business&quot;
-            ^
-<span class="ansired">Main.scala:50: not found: value ==</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;30B&quot; =&gt; &quot;business&quot;
-                                        ^
-<span class="ansired">Main.scala:50: value model is not a member of cmd204.this.$ref$cmd169.Calculator</span>
-  case calc.brand == &quot;hp&quot; &amp;&amp; calc.model == &quot;30B&quot; =&gt; &quot;business&quot;
-                                  ^</pre>
+
+
+<div class="output_text output_subarea ">
+<pre>defined <span class="ansigreen">function </span><span class="ansicyan">calcType</span></pre>
 </div>
+
 </div>
 
 </div>
@@ -2698,7 +3229,7 @@ Compilation Failed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[235]:</div>
+<div class="prompt input_prompt">In&nbsp;[127]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">case</span> <span class="k">class</span> <span class="nc">Calculator</span><span class="o">(</span><span class="n">brand</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">model</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span>
@@ -2727,7 +3258,7 @@ Compilation Failed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[236]:</div>
+<div class="prompt input_prompt">In&nbsp;[128]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">hp20b</span> <span class="k">=</span> <span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;hp&quot;</span><span class="o">,</span> <span class="s">&quot;20b&quot;</span><span class="o">)</span>
@@ -2745,7 +3276,7 @@ Compilation Failed
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">hp20b</span>: <span class="ansigreen">cmd205.INSTANCE.$ref$cmd204.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;20b&quot;</span>)</pre>
+<pre><span class="ansicyan">hp20b</span>: <span class="ansigreen">cmd106.INSTANCE.$ref$cmd105.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;20b&quot;</span>)</pre>
 </div>
 
 </div>
@@ -2756,7 +3287,7 @@ Compilation Failed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[237]:</div>
+<div class="prompt input_prompt">In&nbsp;[129]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">hp20b</span> <span class="k">=</span> <span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;hp&quot;</span><span class="o">,</span> <span class="s">&quot;20b&quot;</span><span class="o">)</span>
@@ -2774,7 +3305,7 @@ Compilation Failed
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">hp20b</span>: <span class="ansigreen">cmd206.INSTANCE.$ref$cmd204.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;20b&quot;</span>)</pre>
+<pre><span class="ansicyan">hp20b</span>: <span class="ansigreen">cmd107.INSTANCE.$ref$cmd105.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;20b&quot;</span>)</pre>
 </div>
 
 </div>
@@ -2785,7 +3316,7 @@ Compilation Failed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[238]:</div>
+<div class="prompt input_prompt">In&nbsp;[130]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">hp20B</span> <span class="k">=</span> <span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;hp&quot;</span><span class="o">,</span> <span class="s">&quot;20b&quot;</span><span class="o">)</span>
@@ -2803,7 +3334,7 @@ Compilation Failed
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">hp20B</span>: <span class="ansigreen">cmd207.INSTANCE.$ref$cmd204.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;20b&quot;</span>)</pre>
+<pre><span class="ansicyan">hp20B</span>: <span class="ansigreen">cmd108.INSTANCE.$ref$cmd105.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;20b&quot;</span>)</pre>
 </div>
 
 </div>
@@ -2814,7 +3345,7 @@ Compilation Failed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[239]:</div>
+<div class="prompt input_prompt">In&nbsp;[131]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="n">hp20b</span> <span class="o">==</span> <span class="n">hp20B</span>
@@ -2832,7 +3363,7 @@ Compilation Failed
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">res208</span>: <span class="ansigreen">Boolean</span> = true</pre>
+<pre><span class="ansicyan">res109</span>: <span class="ansigreen">Boolean</span> = true</pre>
 </div>
 
 </div>
@@ -2843,7 +3374,7 @@ Compilation Failed
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
+<div class="prompt input_prompt">In&nbsp;[132]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">val</span> <span class="n">hp20b</span> <span class="k">=</span> <span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;hp&quot;</span><span class="o">,</span> <span class="s">&quot;20B&quot;</span><span class="o">)</span>
@@ -2854,6 +3385,9 @@ Compilation Failed
   <span class="k">case</span> <span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;hp&quot;</span><span class="o">,</span> <span class="s">&quot;48G&quot;</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="s">&quot;scientific&quot;</span>
   <span class="k">case</span> <span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;hp&quot;</span><span class="o">,</span> <span class="s">&quot;30B&quot;</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="s">&quot;business&quot;</span>
   <span class="k">case</span> <span class="nc">Calculator</span><span class="o">(</span><span class="n">ourBrand</span><span class="o">,</span> <span class="n">ourModel</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="s">&quot;Calculator: %s %s is of unknown type&quot;</span><span class="o">.</span><span class="n">format</span><span class="o">(</span><span class="n">ourBrand</span><span class="o">,</span> <span class="n">ourModel</span><span class="o">)</span>
+  <span class="c1">//case Calculator(_, _) =&gt; &quot;Calculator of unknown type&quot;</span>
+  <span class="c1">//case _ =&gt; &quot;Calculator of unknown type&quot;</span>
+  <span class="c1">//case c@Calculator(_, _) =&gt; &quot;Calculator: %s of unknown type&quot;.format(c)</span>
 <span class="o">}</span>
 </pre></div>
 
@@ -2869,8 +3403,8 @@ Compilation Failed
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansicyan">hp20b</span>: <span class="ansigreen">cmd209.INSTANCE.$ref$cmd204.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;20B&quot;</span>)
-<span class="ansicyan">hp30b</span>: <span class="ansigreen">cmd209.INSTANCE.$ref$cmd204.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;30B&quot;</span>)
+<pre><span class="ansicyan">hp20b</span>: <span class="ansigreen">cmd110.INSTANCE.$ref$cmd105.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;20B&quot;</span>)
+<span class="ansicyan">hp30b</span>: <span class="ansigreen">cmd110.INSTANCE.$ref$cmd105.Calculator</span> = <span class="ansiyellow">Calculator</span>(<span class="ansigreen">&quot;hp&quot;</span>, <span class="ansigreen">&quot;30B&quot;</span>)
 defined <span class="ansigreen">function </span><span class="ansicyan">calcType</span></pre>
 </div>
 
@@ -2882,10 +3416,10 @@ defined <span class="ansigreen">function </span><span class="ansicyan">calcType<
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
+<div class="prompt input_prompt">In&nbsp;[133]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-scala"><pre><span class="k">case</span> <span class="nc">Calculator</span><span class="o">(</span><span class="k">_</span><span class="o">,</span> <span class="k">_</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="s">&quot;Calculator of unknown type&quot;</span>
+<div class=" highlight hl-scala"><pre><span class="n">calcType</span><span class="o">(</span><span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;hp&quot;</span><span class="o">,</span><span class="s">&quot;20B&quot;</span><span class="o">))</span>
 </pre></div>
 
 </div>
@@ -2897,12 +3431,12 @@ defined <span class="ansigreen">function </span><span class="ansicyan">calcType<
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">&lt;console&gt;:1: illegal start of definition</span>
-case Calculator(_, _) =&gt; &quot;Calculator of unknown type&quot;
-^</pre>
+
+
+<div class="output_text output_subarea ">
+<pre><span class="ansicyan">res111</span>: <span class="ansigreen">java.lang.String</span> = <span class="ansigreen">&quot;financial&quot;</span></pre>
 </div>
+
 </div>
 
 </div>
@@ -2911,10 +3445,10 @@ case Calculator(_, _) =&gt; &quot;Calculator of unknown type&quot;
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
+<div class="prompt input_prompt">In&nbsp;[134]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-scala"><pre><span class="k">case</span> <span class="k">_</span> <span class="k">=&gt;</span> <span class="s">&quot;Calculator of unknown type&quot;</span>
+<div class=" highlight hl-scala"><pre><span class="n">calcType</span><span class="o">(</span><span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;hp&quot;</span><span class="o">,</span><span class="s">&quot;48G&quot;</span><span class="o">))</span>
 </pre></div>
 
 </div>
@@ -2926,12 +3460,12 @@ case Calculator(_, _) =&gt; &quot;Calculator of unknown type&quot;
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">&lt;console&gt;:1: illegal start of definition</span>
-case _ =&gt; &quot;Calculator of unknown type&quot;
-^</pre>
+
+
+<div class="output_text output_subarea ">
+<pre><span class="ansicyan">res112</span>: <span class="ansigreen">java.lang.String</span> = <span class="ansigreen">&quot;scientific&quot;</span></pre>
 </div>
+
 </div>
 
 </div>
@@ -2940,10 +3474,10 @@ case _ =&gt; &quot;Calculator of unknown type&quot;
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
+<div class="prompt input_prompt">In&nbsp;[135]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-scala"><pre><span class="k">case</span> <span class="n">c</span><span class="nd">@Calculator</span><span class="o">(</span><span class="k">_</span><span class="o">,</span> <span class="k">_</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="s">&quot;Calculator: %s of unknown type&quot;</span><span class="o">.</span><span class="n">format</span><span class="o">(</span><span class="n">c</span><span class="o">)</span>
+<div class=" highlight hl-scala"><pre><span class="n">calcType</span><span class="o">(</span><span class="nc">Calculator</span><span class="o">(</span><span class="s">&quot;kth&quot;</span><span class="o">,</span><span class="s">&quot;h3&quot;</span><span class="o">))</span>
 </pre></div>
 
 </div>
@@ -2955,12 +3489,12 @@ case _ =&gt; &quot;Calculator of unknown type&quot;
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">&lt;console&gt;:1: illegal start of definition</span>
-case c@Calculator(_, _) =&gt; &quot;Calculator: %s of unknown type&quot;.format(c)
-^</pre>
+
+
+<div class="output_text output_subarea ">
+<pre><span class="ansicyan">res113</span>: <span class="ansigreen">java.lang.String</span> = <span class="ansigreen">&quot;Calculator: kth h3 is of unknown type&quot;</span></pre>
 </div>
+
 </div>
 
 </div>
@@ -2981,7 +3515,7 @@ case c@Calculator(_, _) =&gt; &quot;Calculator: %s of unknown type&quot;.format(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[241]:</div>
+<div class="prompt input_prompt">In&nbsp;[140]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">try</span> <span class="o">{</span>
@@ -3006,16 +3540,16 @@ case c@Calculator(_, _) =&gt; &quot;Calculator: %s of unknown type&quot;.format(
 <pre>
 Compilation Failed
 <span class="ansired">Main.scala:43: not found: value remoteCalculatorService</span>
-  remoteCalculatorService.add(1, 2)
+  remoteCalculatorService.add(1, 2)
   ^
 <span class="ansired">Main.scala:45: not found: type ServerIsDownException</span>
-  case e: ServerIsDownException =&gt; log.error(e, &quot;the remote calculator service is unavailble. should have kept your trustry HP.&quot;)
+  case e: ServerIsDownException =&gt; log.error(e, &quot;the remote calculator service is unavailble. should have kept your trustry HP.&quot;)
           ^
 <span class="ansired">Main.scala:45: not found: value log</span>
-  case e: ServerIsDownException =&gt; log.error(e, &quot;the remote calculator service is unavailble. should have kept your trustry HP.&quot;)
+  case e: ServerIsDownException =&gt; log.error(e, &quot;the remote calculator service is unavailble. should have kept your trustry HP.&quot;)
                                    ^
 <span class="ansired">Main.scala:47: not found: value remoteCalculatorService</span>
-  remoteCalculatorService.close()
+  remoteCalculatorService.close()
   ^</pre>
 </div>
 </div>
@@ -3054,16 +3588,16 @@ Compilation Failed
 <pre>
 Compilation Failed
 <span class="ansired">Main.scala:43: not found: value remoteCalculatorService</span>
-  remoteCalculatorService.add(1, 2)
+  remoteCalculatorService.add(1, 2)
   ^
 <span class="ansired">Main.scala:45: not found: type ServerIsDownException</span>
-  case e: ServerIsDownException =&gt; {
+  case e: ServerIsDownException =&gt; {
           ^
 <span class="ansired">Main.scala:46: not found: value log</span>
-    log.error(e, &quot;the remote calculator service is unavailble. should have kept your trustry HP.&quot;)
+    log.error(e, &quot;the remote calculator service is unavailble. should have kept your trustry HP.&quot;)
     ^
 <span class="ansired">Main.scala:50: not found: value remoteCalculatorService</span>
-  remoteCalculatorService.close()
+  remoteCalculatorService.close()
   ^</pre>
 </div>
 </div>
@@ -3071,6 +3605,57 @@ Compilation Failed
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#49828;&#52860;&#46972;-&#50672;&#49845;&#47928;&#51228;-:-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#49828;&#52860;&#46972; &#50672;&#49845;&#47928;&#51228; : &#54028;&#53944;1-1&#54924;&#52264; &#48156;&#54364;&#51088; &#51060;&#49345;&#50676;<a class="anchor-link" href="#&#49828;&#52860;&#46972;-&#50672;&#49845;&#47928;&#51228;-:-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="c1">// Problem 1 match 와 부분적용 문제</span>
+<span class="k">def</span> <span class="n">fun</span><span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">Int</span><span class="o">])</span> <span class="k">=</span> <span class="n">a</span> <span class="k">match</span> <span class="o">{</span>
+    <span class="k">case</span> <span class="nc">List</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">p</span><span class="o">,</span> <span class="n">q</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">p</span> <span class="o">+</span> <span class="n">q</span>
+    <span class="k">case</span> <span class="k">_</span> <span class="k">=&gt;</span> <span class="o">-</span><span class="mi">1</span>
+<span class="o">}</span>
+
+<span class="c1">// println(fun(List(0,10,20)))?</span>
+<span class="c1">// println(fun(List(0,1,2,3)))?</span>
+<span class="c1">// println(fun(List(1,10,20)))?</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Problem-2.-&#49828;&#52860;&#46972;&#47196;-&#44396;&#44396;&#45800;&#51012;-&#51676;&#48389;&#49884;&#45796;!">Problem 2. &#49828;&#52860;&#46972;&#47196; &#44396;&#44396;&#45800;&#51012; &#51676;&#48389;&#49884;&#45796;!<a class="anchor-link" href="#Problem-2.-&#49828;&#52860;&#46972;&#47196;-&#44396;&#44396;&#45800;&#51012;-&#51676;&#48389;&#49884;&#45796;!">&#182;</a></h3><ul>
+<li><a href="http://devcosin.tistory.com/category/Scala">http://devcosin.tistory.com/category/Scala</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#49324;&#51060;&#53944;-&#52280;&#51312;-&quot;https://github.com/codeport/scala/wiki/Programming-in-scala&quot;">&#49324;&#51060;&#53944; &#52280;&#51312; "<a href="https://github.com/codeport/scala/wiki/Programming-in-scala">https://github.com/codeport/scala/wiki/Programming-in-scala</a>"<a class="anchor-link" href="#&#49324;&#51060;&#53944;-&#52280;&#51312;-&quot;https://github.com/codeport/scala/wiki/Programming-in-scala&quot;">&#182;</a></h2>
+</div>
+</div>
 </div>
     </div>
   </div>

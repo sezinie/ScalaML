@@ -1,5 +1,8 @@
 
 #싸이그래머[스칼라ML] 파트1-1회차 발표자 이상열
+## 스칼라 다운로드 및 연동
+ + Jupyter 연동 : https://github.com/alexarchambault/jupyter-scala
+
 ##스칼라를 사용해야 하는 이유는?
  + 풍부한 표현력(1급 함수, 클로져)
  + 간결함 (타입 추론, 함수 리터럴)
@@ -16,11 +19,12 @@
     1+1
 
 
-    [36mres137[0m: [32mInt[0m = [32m2[0m
+    [36mres1[0m: [32mInt[0m = [32m2[0m
 
 
 ##값
  + 식의 결과에 이름을 붙일 수 있다.
+ + val은 자바의 final 변수와 유사하고 이미 할당된 변수는 재할당 될 수 없다. 참조하고 있는 객체는 변경될 수 있음.
 
 
     val two = 1+1 
@@ -31,6 +35,7 @@
 
 ##변수
  + 값과 이름의 관계를 변경할 필요가 있다면, var를 사용해야만 한다.
+ + var는 자바의 non-final 변수와 유사하고 재할당이 가능하다.
 
 
     var name = "steve"
@@ -52,6 +57,7 @@
  + 인자가 없는 함수의 경우 호출시 괄호를 생략할 수도 있다.
  + 이름없는 함수
  + 함수가 여러 식으로 이루어진 경우, {}를 사용해 이를 위한 공간을 만들 수 있다.
+ ![그림참고](http://www.slipp.net/wiki/download/attachments/23199906/image2015-4-27%201%3A33%3A10.png?version=1&modificationDate=1430065988000&api=v2)
 
 
     def addOne(m: Int): Int = m + 1
@@ -78,28 +84,28 @@
     three()
 
 
-    [36mres144[0m: [32mInt[0m = [32m3[0m
+    [36mres8[0m: [32mInt[0m = [32m3[0m
 
 
 
     three
 
 
-    [36mres145[0m: [32mInt[0m = [32m3[0m
+    [36mres9[0m: [32mInt[0m = [32m3[0m
 
 
 
-    (x: Int) => x + 1
+    (x: Int) => x + 1  // Anonymous Functions
 
 
-    [36mres146[0m: [32mInt => Int[0m = <function1>
+    [36mres10[0m: [32mInt => Int[0m = <function1>
 
 
 
-    res21(1)
+    res10(1)
 
 
-    [36mres147[0m: [32mInt[0m = [32m2[0m
+    [36mres11[0m: [32mInt[0m = [32m2[0m
 
 
 
@@ -165,6 +171,9 @@
 - 떄로 함수의 인자중 일부를 적용하고, 나머지는 나중에 적용하게 남겨두는 것이 더 쓸모있는 경우가 있다.
 - 다음은 두 수를 곱하는 곱셈기를 만들 수 있는 함수이다. 첫 호출시 승수를 지정하고, 나중에 피승수를 지정할 수 있다.
 
+- 함수의 첫번째 인자를 넘기면 그 결과로 두번째 인자를 받는 함수가 반환이 되고 반환된 함수에 두번째 인자를 넘기면 기존-커리되지 않은 함수-의 결과가 변환됨.
+- A(x,y) -> z인 함수를 C'A(x)(y) -> z로 바꾼다고 생각하면 됨.
+
 
     def multiply(m: Int)(n: Int): Int = m * n
 
@@ -221,6 +230,63 @@
     [36mres162[0m: [32mInt[0m = [32m6[0m
 
 
+
+    def justFun(a:Int, b:Int){
+        val sum = a + b
+        println("result : " + sum)
+    }
+
+
+    defined [32mfunction [36mjustFun[0m
+
+
+
+    def curriedFun(a:Int)(b:Int){
+        val sum = a + b
+        println("result : " + sum)
+    }
+
+
+    defined [32mfunction [36mcurriedFun[0m
+
+
+
+    justFun(3,4)
+
+    result : 7
+
+
+
+    
+
+
+
+    curriedFun(3)(4)
+
+    result : 7
+
+
+
+    
+
+
+
+    val one = curriedFun(3)_
+
+
+    [36mone[0m: [32mInt => Unit[0m = <function1>
+
+
+
+    one(4)
+
+    result : 7
+
+
+
+    
+
+
 ## 가변 길이 인자
 - 동일한 타입의 매개변수가 반복되는 경우를 처리할 수 있는 특별한 문법이 있다. 여러 문자열에 동시에 `capitalize`를 호출하고 싶을 경우 다음과 같이 쓸 수 있다.
 
@@ -239,13 +305,30 @@
     capitalizeAll("rarity", "applejack")
 
 
-    [36mres164[0m: [32mSeq[String][0m = [33mArrayBuffer[0m([32m"Rarity"[0m, [32m"Applejack"[0m)
+    [36mres28[0m: [32mSeq[String][0m = [33mArrayBuffer[0m([32m"Rarity"[0m, [32m"Applejack"[0m)
+
+
+
+    def sum(args: Int*) = {
+          var result = 0
+          for (arg <- args) result += arg
+          result
+    }
+
+
+    defined [32mfunction [36msum[0m
+
+
+
+    val s = sum(1,4,9,16,25)
+
+
+    [36ms[0m: [32mInt[0m = [32m55[0m
 
 
 ## 클래스
 - 클래스 안에서 메소드는 def로, 필드는 val로 정의한다. 메소드는 단지 클래스(객체)의 상태를 억세스할 수 있는 함수에 지나지 않는다.
 - 생성자 : 스칼라에서는 생성자가 특별한 메소드로 따로 존재하지 않는다. 클래스 몸체에서 메소드 정의 부분 밖에 있는 모든 코드가 생성자 코드가 된다. Calculator 예제를 생성자가 인자를 받아 내부 상태를 초기화하도록 변경해 보자.
-- 식 : BasicCalculator 예제를 보면 스칼라가 식 중심의 언어란 점을 잘 알 수 있다. color 값은 if/else 식에 의해 초기화되었다. 스칼라는 대부분의 구성 요소가 문(statement, 반환값이 없는 문장)이 아니고 식(expression, 결과를 반환하는 문장)이라는 점에서 식 중심의 언어이다.
 
 
     class Calculator {
@@ -261,21 +344,21 @@
     val calc = new Calculator
 
 
-    [36mcalc[0m: [32mcmd166.INSTANCE.$ref$cmd165.Calculator[0m = cmd165$$user$Calculator@1e776f48
+    [36mcalc[0m: [32mcmd32.INSTANCE.$ref$cmd31.Calculator[0m = cmd31$$user$Calculator@20d7eefc
 
 
 
     calc.add(1, 2)
 
 
-    [36mres167[0m: [32mInt[0m = [32m3[0m
+    [36mres33[0m: [32mInt[0m = [32m3[0m
 
 
 
     calc.brand
 
 
-    [36mres168[0m: [32mString[0m = [32m"HP"[0m
+    [36mres34[0m: [32mString[0m = [32m"HP"[0m
 
 
 
@@ -300,14 +383,14 @@
     val calc = new Calculator("HP")
 
 
-    [36mcalc[0m: [32mcmd170.INSTANCE.$ref$cmd169.Calculator[0m = cmd169$$user$Calculator@72417bfb
+    [36mcalc[0m: [32mcmd42.INSTANCE.$ref$cmd35.Calculator[0m = cmd35$$user$Calculator@35394075
 
 
 
     calc.color
 
 
-    [36mres171[0m: [32mString[0m = [32m"black"[0m
+    [36mres41[0m: [32mString[0m = [32m"white"[0m
 
 
 ## 곁다리: 함수 대 메소드
@@ -328,7 +411,7 @@
     val c = new C
 
 
-    [36mc[0m: [32mcmd173.INSTANCE.$ref$cmd172.C[0m = cmd172$$user$C@1aae85ee
+    [36mc[0m: [32mcmd44.INSTANCE.$ref$cmd43.C[0m = cmd43$$user$C@40a869b
 
 
 
@@ -342,19 +425,62 @@
     c.finc
 
 
-    [36mres175[0m: [32m() => Unit[0m = <function0>
+    [36mres46[0m: [32m() => Unit[0m = <function0>
+
+
+
+    val fMsg = () => "Hello" 
+
+
+    [36mfMsg[0m: [32m() => java.lang.String[0m = <function0>
+
+
+
+    def mMsg() = "Hello" 
+
+
+    defined [32mfunction [36mmMsg[0m
+
+
+
+    println(mMsg)
+
+    Hello
+
+
+
+    
+
+
+
+    println(fMsg)
+
+    <function0>
+
+
+
+    
+
+
+
+    println(fMsg())
+
+    Hello
+
+
+
+    
 
 
 ## 상속
 - See Also “효율적인 스칼라(effective scala)”에서는 하위클래스가 상위클래스와 실제 다르지 않을 경우 타입 별명이 extends(확장)보다 더 낫다고 말한다. 스칼라 여행(Tour of Scala)에서는 상속하기(Subclassing)에 대해 다루고 있다.
-- 매소드 중복정의(Overloading)
+- 매소드 중복정의(Overloading) ; 함수를 상속받아 재정의(추상메소드는 그냥 진행, 그렇지 않는 경우 메소드 앞에 override를 붙임)
 - 추상클래스 : 추상 클래스(abstract class)는 메소드 정의는 있지만 구현은 없는 클래스이다. 대신 이를 상속한 하위클래스에서 메소드를 구현하게 된다. 추상 클래스의 인스턴스를 만들 수는 없다.
 
 
     class ScientificCalculator(brand: String) extends Calculator(brand) {
       def log(m: Double, base: Double) = math.log(m) / math.log(base)
     }
-    
 
 
     defined [32mclass [36mScientificCalculator[0m
@@ -393,9 +519,9 @@
 
     Compilation Failed
 
-    Main.scala:44: class Shape is abstract; cannot be instantiated
+    Main.scala:44: class Shape is abstract; cannot be instantiated
 
-      new Shape 
+      new Shape 
 
       ^
 
@@ -413,7 +539,7 @@
  - 트레잇을 사용하는 것이 낫다. 클래스는 오직 하나만 상속(extend)할 수 있지만, 트레잇은 여러 가지를 받아 사용할 수 있다.
  - 생성자 매개변수가 필요한 경우라면 추상 클래스를 사용하라. 추상 클래스의 생성자는 매개변수를 받을 수 있지만, 트레잇의 생성자는 그렇지 않다. 예를 들어 trait t(i: Int) {} 에서 i 매개변수는 허용되지 않는다.
  - 당신이 이런 질문을 한 첫번째 사람은 아니다. 스택 오버플로우에서 트레잇과 추상 클래스의 비교, 추상 클래스와 트레잇의 차이, 또는 스칼라 프로그래밍: 트레잇냐 아니냐 그것이 문제로다? 등을 참조하라.
-
+- 자바의 Interface 기능을 확장한 개념.
 
 
     trait Car {
@@ -423,7 +549,6 @@
     trait Shiny {
       val shineRefraction: Int
     }
-    
 
 
     defined [32mtrait [36mCar[0m
@@ -453,6 +578,8 @@
 ##타입
 - 앞에서 숫자 타입중 하나인 Int를 인자로 받는 함수를 보았다. 모든 타입의 값을 처리할 수 있는 일반적(generic)인 함수를 만들 수도 있다. 일반적 함수를 만들 때는 각괄호([])안에 타입 매개변수를 추가한다. 아래는 키와 값을 가지는 일반적인 캐시를 보여준다.
 
+- 제네릭함이란 코드를 타입에 대하여 파라미터화 할 수 있는 능력이다. 이해를 돕기 위해 하나의 예를 들어 보자. 연결 리스트 라이브러리를 작성하는 프로그래머는 리스트의 원소 타입을 도대체 무엇으로 해야 할지 고민에 빠지게 된다. 이 연결 리스트는 서로 다른 많은 상황에서 사용 될 수 있기 때문에 원소의 타입이 반드시 Int 또는 반드시 Double이 될 것이라 미리 결정하는 것은 불가능하다. 이렇게 결정해 두는 일은 완전히 임의적이며 라이브러리의 사용에 있어 필요 이상의 심한 제약으로 작용 한다.
+
 
     trait Cache[K, V] {
       def get(key: K): V
@@ -468,9 +595,9 @@
     def remove[K](key: K)
 
 
-    <console>:1: '=' expected but eof found.
+    <console>:1: '=' expected but eof found.
 
-    def remove[K](key: K)
+    def remove[K](key: K)
 
                          ^
 
@@ -478,6 +605,7 @@
 ##apply 메소드
 - apply 메소드를 사용하면 클래스나 객체의 용도가 주로 하나만 있는 경우를 아주 멋지게 표현할 수 있다.
 - apply를 정의하면 메소드를 호출하듯 객체 인스턴스를 호출할 수 있다. 객체 인스턴스를 호출하면 그 객체(클래스)에 정의된 apply()가 호출된다. 자세한 것은 나중에 살펴볼 것이다.
+- apply는 말 그대로 어떤 함수를 적용시킨다는 의미, apply와 함께 들어오는 인자에 대해서 어떤 함수를 적용 시킨다는 것.
 
 
     class Foo {}
@@ -523,6 +651,27 @@
 
 
     [36mres190[0m: [32mInt[0m = [32m0[0m
+
+
+
+    val f1 = (x:Int, y:Int) => x + y
+
+
+    [36mf1[0m: [32m(Int, Int) => Int[0m = <function2>
+
+
+
+    f1.apply(2,3)
+
+
+    [36mres67[0m: [32mInt[0m = [32m5[0m
+
+
+
+    f1(2,3)
+
+
+    [36mres68[0m: [32mInt[0m = [32m5[0m
 
 
 ## 객체
@@ -630,14 +779,44 @@
     object colorHolder {
       val BLUE = "Blue"
       val RED = "Red"
-          }
+    }
 
 
-    <console>:3: '{' expected but ';' found.
+    <console>:3: '{' expected but ';' found.
 
-    object colorHolder {
+    object colorHolder {
 
     ^
+
+
+
+    package a {
+           package b {
+               class A
+               package test {
+                   class ATest
+               }
+           }
+        }
+
+
+    Preprocessor: 'package a {
+
+           package b {
+
+               class A
+
+               package test {
+
+                   class ATest
+
+               }
+
+           }
+
+        }':
+
+    Splitter:0 / End:0 ..."package a "
 
 
 
@@ -646,9 +825,9 @@
 
     Compilation Failed
 
-    Main.scala:42: object twitter is not a member of package com
+    Main.scala:42: object twitter is not a member of package com
 
-    println("the color is: " + com.twitter.example.colorHolder.BLUE)
+    println("the color is: " + com.twitter.example.colorHolder.BLUE)
 
                                    ^
 
@@ -665,6 +844,9 @@
 
 ##패턴 매칭
 - 패턴 매치는 스칼라에서 가장 유용한 기능 중 하나이다. 값에 대해 매칭할 수 있다.
+- 기본적인 컨셉트는 자바의 switch 와 비슷하다. 하지만 자바의 switch 는 constant 값에만 적용할수 있는 반면에 스칼라의 페턴매칭은 constant 값 이외에도 case class, variable, collection 등등 여러가지 유용한 패턴을 사용할수 있다.
+- match도 expression이다. 즉, 값을 반환한다. 명시적으로 break; 를 해야 하는 switch와 달리 match를 찾은 이후엔 계속 matching을 시도하지 않는다. 어떤 패턴에도 매칭되지 않으면 MatchError 예외를 던진다. 예외를 피하려면  case _ =>  를 명시하는 방법을 써야 한다.
+
 
 
     val times = 1
@@ -674,11 +856,10 @@
       case 2 => "two"
       case _ => "some other number"
     }
-    
 
 
     [36mtimes[0m: [32mInt[0m = [32m1[0m
-    [36mres201_1[0m: [32mjava.lang.String[0m = [32m"one"[0m
+    [36mres73_1[0m: [32mjava.lang.String[0m = [32m"one"[0m
 
 
 
@@ -689,7 +870,7 @@
     }
 
 
-    [36mres202[0m: [32mjava.lang.String[0m = [32m"one"[0m
+    [36mres74[0m: [32mjava.lang.String[0m = [32m"one"[0m
 
 
 ##타입에 대해 매치시키기
@@ -715,104 +896,14 @@
 
 
     def calcType(calc: Calculator) = calc match {
-      case calc.brand == "hp" && calc.model == "20B" => "financial"
-      case calc.brand == "hp" && calc.model == "48G" => "scientific"
-      case calc.brand == "hp" && calc.model == "30B" => "business"
+      case c if c.brand == "hp" && calc.model == "20B" => "financial"
+      case c if c.brand == "hp" && calc.model == "48G" => "scientific"
+      case c if c.brand == "hp" && calc.model == "30B" => "business"
       case _ => "unknown"
     }
 
 
-    Compilation Failed
-
-    Main.scala:48: not found: value &&
-
-      case calc.brand == "hp" && calc.model == "20B" => "financial"
-
-                              ^
-
-    Main.scala:48: not found: value ==
-
-      case calc.brand == "hp" && calc.model == "20B" => "financial"
-
-                      ^
-
-    Main.scala:48: value brand is not a member of cmd204.this.$ref$cmd169.Calculator
-
-      case calc.brand == "hp" && calc.model == "20B" => "financial"
-
-                ^
-
-    Main.scala:48: not found: value ==
-
-      case calc.brand == "hp" && calc.model == "20B" => "financial"
-
-                                            ^
-
-    Main.scala:48: value model is not a member of cmd204.this.$ref$cmd169.Calculator
-
-      case calc.brand == "hp" && calc.model == "20B" => "financial"
-
-                                      ^
-
-    Main.scala:49: not found: value &&
-
-      case calc.brand == "hp" && calc.model == "48G" => "scientific"
-
-                              ^
-
-    Main.scala:49: not found: value ==
-
-      case calc.brand == "hp" && calc.model == "48G" => "scientific"
-
-                      ^
-
-    Main.scala:49: value brand is not a member of cmd204.this.$ref$cmd169.Calculator
-
-      case calc.brand == "hp" && calc.model == "48G" => "scientific"
-
-                ^
-
-    Main.scala:49: not found: value ==
-
-      case calc.brand == "hp" && calc.model == "48G" => "scientific"
-
-                                            ^
-
-    Main.scala:49: value model is not a member of cmd204.this.$ref$cmd169.Calculator
-
-      case calc.brand == "hp" && calc.model == "48G" => "scientific"
-
-                                      ^
-
-    Main.scala:50: not found: value &&
-
-      case calc.brand == "hp" && calc.model == "30B" => "business"
-
-                              ^
-
-    Main.scala:50: not found: value ==
-
-      case calc.brand == "hp" && calc.model == "30B" => "business"
-
-                      ^
-
-    Main.scala:50: value brand is not a member of cmd204.this.$ref$cmd169.Calculator
-
-      case calc.brand == "hp" && calc.model == "30B" => "business"
-
-                ^
-
-    Main.scala:50: not found: value ==
-
-      case calc.brand == "hp" && calc.model == "30B" => "business"
-
-                                            ^
-
-    Main.scala:50: value model is not a member of cmd204.this.$ref$cmd169.Calculator
-
-      case calc.brand == "hp" && calc.model == "30B" => "business"
-
-                                      ^
+    defined [32mfunction [36mcalcType[0m
 
 
 ##케이스 클래스(case class)
@@ -833,28 +924,28 @@
     val hp20b = Calculator("hp", "20b")
 
 
-    [36mhp20b[0m: [32mcmd205.INSTANCE.$ref$cmd204.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"20b"[0m)
+    [36mhp20b[0m: [32mcmd106.INSTANCE.$ref$cmd105.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"20b"[0m)
 
 
 
     val hp20b = Calculator("hp", "20b")
 
 
-    [36mhp20b[0m: [32mcmd206.INSTANCE.$ref$cmd204.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"20b"[0m)
+    [36mhp20b[0m: [32mcmd107.INSTANCE.$ref$cmd105.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"20b"[0m)
 
 
 
     val hp20B = Calculator("hp", "20b")
 
 
-    [36mhp20B[0m: [32mcmd207.INSTANCE.$ref$cmd204.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"20b"[0m)
+    [36mhp20B[0m: [32mcmd108.INSTANCE.$ref$cmd105.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"20b"[0m)
 
 
 
     hp20b == hp20B
 
 
-    [36mres208[0m: [32mBoolean[0m = true
+    [36mres109[0m: [32mBoolean[0m = true
 
 
 
@@ -866,45 +957,36 @@
       case Calculator("hp", "48G") => "scientific"
       case Calculator("hp", "30B") => "business"
       case Calculator(ourBrand, ourModel) => "Calculator: %s %s is of unknown type".format(ourBrand, ourModel)
+      //case Calculator(_, _) => "Calculator of unknown type"
+      //case _ => "Calculator of unknown type"
+      //case c@Calculator(_, _) => "Calculator: %s of unknown type".format(c)
     }
 
 
-    [36mhp20b[0m: [32mcmd209.INSTANCE.$ref$cmd204.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"20B"[0m)
-    [36mhp30b[0m: [32mcmd209.INSTANCE.$ref$cmd204.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"30B"[0m)
+    [36mhp20b[0m: [32mcmd110.INSTANCE.$ref$cmd105.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"20B"[0m)
+    [36mhp30b[0m: [32mcmd110.INSTANCE.$ref$cmd105.Calculator[0m = [33mCalculator[0m([32m"hp"[0m, [32m"30B"[0m)
     defined [32mfunction [36mcalcType[0m
 
 
 
-    case Calculator(_, _) => "Calculator of unknown type"
+    calcType(Calculator("hp","20B"))
 
 
-    <console>:1: illegal start of definition
-
-    case Calculator(_, _) => "Calculator of unknown type"
-
-    ^
+    [36mres111[0m: [32mjava.lang.String[0m = [32m"financial"[0m
 
 
 
-    case _ => "Calculator of unknown type"
+    calcType(Calculator("hp","48G"))
 
 
-    <console>:1: illegal start of definition
-
-    case _ => "Calculator of unknown type"
-
-    ^
+    [36mres112[0m: [32mjava.lang.String[0m = [32m"scientific"[0m
 
 
 
-    case c@Calculator(_, _) => "Calculator: %s of unknown type".format(c)
+    calcType(Calculator("kth","h3"))
 
 
-    <console>:1: illegal start of definition
-
-    case c@Calculator(_, _) => "Calculator: %s of unknown type".format(c)
-
-    ^
+    [36mres113[0m: [32mjava.lang.String[0m = [32m"Calculator: kth h3 is of unknown type"[0m
 
 
 ##예외
@@ -922,27 +1004,27 @@
 
     Compilation Failed
 
-    Main.scala:43: not found: value remoteCalculatorService
+    Main.scala:43: not found: value remoteCalculatorService
 
-      remoteCalculatorService.add(1, 2)
+      remoteCalculatorService.add(1, 2)
 
       ^
 
-    Main.scala:45: not found: type ServerIsDownException
+    Main.scala:45: not found: type ServerIsDownException
 
-      case e: ServerIsDownException => log.error(e, "the remote calculator service is unavailble. should have kept your trustry HP.")
+      case e: ServerIsDownException => log.error(e, "the remote calculator service is unavailble. should have kept your trustry HP.")
 
               ^
 
-    Main.scala:45: not found: value log
+    Main.scala:45: not found: value log
 
-      case e: ServerIsDownException => log.error(e, "the remote calculator service is unavailble. should have kept your trustry HP.")
+      case e: ServerIsDownException => log.error(e, "the remote calculator service is unavailble. should have kept your trustry HP.")
 
                                        ^
 
-    Main.scala:47: not found: value remoteCalculatorService
+    Main.scala:47: not found: value remoteCalculatorService
 
-      remoteCalculatorService.close()
+      remoteCalculatorService.close()
 
       ^
 
@@ -962,27 +1044,45 @@
 
     Compilation Failed
 
-    Main.scala:43: not found: value remoteCalculatorService
+    Main.scala:43: not found: value remoteCalculatorService
 
-      remoteCalculatorService.add(1, 2)
+      remoteCalculatorService.add(1, 2)
 
       ^
 
-    Main.scala:45: not found: type ServerIsDownException
+    Main.scala:45: not found: type ServerIsDownException
 
-      case e: ServerIsDownException => {
+      case e: ServerIsDownException => {
 
               ^
 
-    Main.scala:46: not found: value log
+    Main.scala:46: not found: value log
 
-        log.error(e, "the remote calculator service is unavailble. should have kept your trustry HP.")
+        log.error(e, "the remote calculator service is unavailble. should have kept your trustry HP.")
 
         ^
 
-    Main.scala:50: not found: value remoteCalculatorService
+    Main.scala:50: not found: value remoteCalculatorService
 
-      remoteCalculatorService.close()
+      remoteCalculatorService.close()
 
       ^
 
+
+#스칼라 연습문제 : 파트1-1회차 발표자 이상열
+
+
+    // Problem 1 match 와 부분적용 문제
+    def fun(a: List[Int]) = a match {
+        case List(0, p, q) => p + q
+        case _ => -1
+    }
+    
+    // println(fun(List(0,10,20)))?
+    // println(fun(List(0,1,2,3)))?
+    // println(fun(List(1,10,20)))?
+
+### Problem 2. 스칼라로 구구단을 짜봅시다!
+- http://devcosin.tistory.com/category/Scala
+
+##사이트 참조 "https://github.com/codeport/scala/wiki/Programming-in-scala"
