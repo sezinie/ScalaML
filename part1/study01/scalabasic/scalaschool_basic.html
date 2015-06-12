@@ -177,7 +177,10 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML]-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML] &#54028;&#53944;1-1&#54924;&#52264; &#48156;&#54364;&#51088; &#51060;&#49345;&#50676;<a class="anchor-link" href="#&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML]-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#182;</a></h1><h2 id="&#49828;&#52860;&#46972;&#47484;-&#49324;&#50857;&#54644;&#50556;-&#54616;&#45716;-&#51060;&#50976;&#45716;?">&#49828;&#52860;&#46972;&#47484; &#49324;&#50857;&#54644;&#50556; &#54616;&#45716; &#51060;&#50976;&#45716;?<a class="anchor-link" href="#&#49828;&#52860;&#46972;&#47484;-&#49324;&#50857;&#54644;&#50556;-&#54616;&#45716;-&#51060;&#50976;&#45716;?">&#182;</a></h2><ul>
+<h1 id="&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML]-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML] &#54028;&#53944;1-1&#54924;&#52264; &#48156;&#54364;&#51088; &#51060;&#49345;&#50676;<a class="anchor-link" href="#&#49912;&#51060;&#44536;&#47000;&#47672;[&#49828;&#52860;&#46972;ML]-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#182;</a></h1><h2 id="&#49828;&#52860;&#46972;-&#45796;&#50868;&#47196;&#46300;-&#48143;-&#50672;&#46041;">&#49828;&#52860;&#46972; &#45796;&#50868;&#47196;&#46300; &#48143; &#50672;&#46041;<a class="anchor-link" href="#&#49828;&#52860;&#46972;-&#45796;&#50868;&#47196;&#46300;-&#48143;-&#50672;&#46041;">&#182;</a></h2><ul>
+<li>Jupyter 연동 : <a href="https://github.com/alexarchambault/jupyter-scala">https://github.com/alexarchambault/jupyter-scala</a></li>
+</ul>
+<h2 id="&#49828;&#52860;&#46972;&#47484;-&#49324;&#50857;&#54644;&#50556;-&#54616;&#45716;-&#51060;&#50976;&#45716;?">&#49828;&#52860;&#46972;&#47484; &#49324;&#50857;&#54644;&#50556; &#54616;&#45716; &#51060;&#50976;&#45716;?<a class="anchor-link" href="#&#49828;&#52860;&#46972;&#47484;-&#49324;&#50857;&#54644;&#50556;-&#54616;&#45716;-&#51060;&#50976;&#45716;?">&#182;</a></h2><ul>
 <li>풍부한 표현력(1급 함수, 클로져)</li>
 <li>간결함 (타입 추론, 함수 리터럴)</li>
 <li>자바와의 혼용 가능 (자바 라이브러리 재사용 가능, 자바 도구를 재사용 가능, 성능의 손실 없이 사용 가능)</li>
@@ -238,6 +241,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#44050;">&#44050;<a class="anchor-link" href="#&#44050;">&#182;</a></h2><ul>
 <li>식의 결과에 이름을 붙일 수 있다.</li>
+<li>val은 자바의 final 변수와 유사하고 이미 할당된 변수는 재할당 될 수 없다. 참조하고 있는 객체는 변경될 수 있음.</li>
 </ul>
 
 </div>
@@ -279,6 +283,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#48320;&#49688;">&#48320;&#49688;<a class="anchor-link" href="#&#48320;&#49688;">&#182;</a></h2><ul>
 <li>값과 이름의 관계를 변경할 필요가 있다면, var를 사용해야만 한다.</li>
+<li>var는 자바의 non-final 변수와 유사하고 재할당이 가능하다.</li>
 </ul>
 
 </div>
@@ -2107,6 +2112,7 @@ Compilation Failed
 <li>당신이 이런 질문을 한 첫번째 사람은 아니다. 스택 오버플로우에서 트레잇과 추상 클래스의 비교, 추상 클래스와 트레잇의 차이, 또는 스칼라 프로그래밍: 트레잇냐 아니냐 그것이 문제로다? 등을 참조하라.</li>
 </ul>
 </li>
+<li>자바의 Interface 기능을 확장한 개념.</li>
 </ul>
 
 </div>
@@ -2892,7 +2898,7 @@ defined <span class="ansigreen">object </span><span class="ansicyan">Bar</span><
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-scala"><pre><span class="k">package</span> <span class="nn">com.twitter.example</span>
@@ -2914,9 +2920,51 @@ defined <span class="ansigreen">object </span><span class="ansicyan">Bar</span><
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansired">&lt;console&gt;:1: &apos;{&apos; expected but eof found.</span>
-package com.twitter.sample
-                          ^</pre>
+<span class="ansired">&lt;console&gt;:3: &apos;{&apos; expected but &apos;;&apos; found.</span>
+object colorHolder {
+^</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="k">package</span> <span class="nn">a</span> <span class="o">{</span>
+       <span class="k">package</span> <span class="nn">b</span> <span class="o">{</span>
+           <span class="k">class</span> <span class="nc">A</span>
+           <span class="k">package</span> <span class="nn">test</span> <span class="o">{</span>
+               <span class="k">class</span> <span class="nc">ATest</span>
+           <span class="o">}</span>
+       <span class="o">}</span>
+    <span class="o">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+Preprocessor: &apos;package a {
+       package b {
+           class A
+           package test {
+               class ATest
+           }
+       }
+    }&apos;:
+Splitter:0 / End:0 ...&quot;package a &quot;</pre>
 </div>
 </div>
 
@@ -2994,6 +3042,7 @@ println(&quot;the color is: &quot; + com.twitter.example.colorHolder.BLUE)
 <h2 id="&#54056;&#53556;-&#47588;&#52845;">&#54056;&#53556; &#47588;&#52845;<a class="anchor-link" href="#&#54056;&#53556;-&#47588;&#52845;">&#182;</a></h2><ul>
 <li>패턴 매치는 스칼라에서 가장 유용한 기능 중 하나이다. 값에 대해 매칭할 수 있다.</li>
 <li>기본적인 컨셉트는 자바의 switch 와 비슷하다. 하지만 자바의 switch 는 constant 값에만 적용할수 있는 반면에 스칼라의 페턴매칭은 constant 값 이외에도 case class, variable, collection 등등 여러가지 유용한 패턴을 사용할수 있다.</li>
+<li>match도 expression이다. 즉, 값을 반환한다. 명시적으로 break; 를 해야 하는 switch와 달리 match를 찾은 이후엔 계속 matching을 시도하지 않는다. 어떤 패턴에도 매칭되지 않으면 MatchError 예외를 던진다. 예외를 피하려면  case _ =&gt;  를 명시하는 방법을 써야 한다.</li>
 </ul>
 
 </div>
@@ -3556,6 +3605,57 @@ Compilation Failed
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#49828;&#52860;&#46972;-&#50672;&#49845;&#47928;&#51228;-:-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#49828;&#52860;&#46972; &#50672;&#49845;&#47928;&#51228; : &#54028;&#53944;1-1&#54924;&#52264; &#48156;&#54364;&#51088; &#51060;&#49345;&#50676;<a class="anchor-link" href="#&#49828;&#52860;&#46972;-&#50672;&#49845;&#47928;&#51228;-:-&#54028;&#53944;1-1&#54924;&#52264;-&#48156;&#54364;&#51088;-&#51060;&#49345;&#50676;">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-scala"><pre><span class="c1">// Problem 1 match 와 부분적용 문제</span>
+<span class="k">def</span> <span class="n">fun</span><span class="o">(</span><span class="n">a</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">Int</span><span class="o">])</span> <span class="k">=</span> <span class="n">a</span> <span class="k">match</span> <span class="o">{</span>
+    <span class="k">case</span> <span class="nc">List</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">p</span><span class="o">,</span> <span class="n">q</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">p</span> <span class="o">+</span> <span class="n">q</span>
+    <span class="k">case</span> <span class="k">_</span> <span class="k">=&gt;</span> <span class="o">-</span><span class="mi">1</span>
+<span class="o">}</span>
+
+<span class="c1">// println(fun(List(0,10,20)))?</span>
+<span class="c1">// println(fun(List(0,1,2,3)))?</span>
+<span class="c1">// println(fun(List(1,10,20)))?</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Problem-2.-&#49828;&#52860;&#46972;&#47196;-&#44396;&#44396;&#45800;&#51012;-&#51676;&#48389;&#49884;&#45796;!">Problem 2. &#49828;&#52860;&#46972;&#47196; &#44396;&#44396;&#45800;&#51012; &#51676;&#48389;&#49884;&#45796;!<a class="anchor-link" href="#Problem-2.-&#49828;&#52860;&#46972;&#47196;-&#44396;&#44396;&#45800;&#51012;-&#51676;&#48389;&#49884;&#45796;!">&#182;</a></h3><ul>
+<li><a href="http://devcosin.tistory.com/category/Scala">http://devcosin.tistory.com/category/Scala</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#49324;&#51060;&#53944;-&#52280;&#51312;-&quot;https://github.com/codeport/scala/wiki/Programming-in-scala&quot;">&#49324;&#51060;&#53944; &#52280;&#51312; "<a href="https://github.com/codeport/scala/wiki/Programming-in-scala">https://github.com/codeport/scala/wiki/Programming-in-scala</a>"<a class="anchor-link" href="#&#49324;&#51060;&#53944;-&#52280;&#51312;-&quot;https://github.com/codeport/scala/wiki/Programming-in-scala&quot;">&#182;</a></h2>
+</div>
+</div>
 </div>
     </div>
   </div>

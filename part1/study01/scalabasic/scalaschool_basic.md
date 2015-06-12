@@ -1,5 +1,8 @@
 
 #싸이그래머[스칼라ML] 파트1-1회차 발표자 이상열
+## 스칼라 다운로드 및 연동
+ + Jupyter 연동 : https://github.com/alexarchambault/jupyter-scala
+
 ##스칼라를 사용해야 하는 이유는?
  + 풍부한 표현력(1급 함수, 클로져)
  + 간결함 (타입 추론, 함수 리터럴)
@@ -21,6 +24,7 @@
 
 ##값
  + 식의 결과에 이름을 붙일 수 있다.
+ + val은 자바의 final 변수와 유사하고 이미 할당된 변수는 재할당 될 수 없다. 참조하고 있는 객체는 변경될 수 있음.
 
 
     val two = 1+1 
@@ -31,6 +35,7 @@
 
 ##변수
  + 값과 이름의 관계를 변경할 필요가 있다면, var를 사용해야만 한다.
+ + var는 자바의 non-final 변수와 유사하고 재할당이 가능하다.
 
 
     var name = "steve"
@@ -534,7 +539,7 @@
  - 트레잇을 사용하는 것이 낫다. 클래스는 오직 하나만 상속(extend)할 수 있지만, 트레잇은 여러 가지를 받아 사용할 수 있다.
  - 생성자 매개변수가 필요한 경우라면 추상 클래스를 사용하라. 추상 클래스의 생성자는 매개변수를 받을 수 있지만, 트레잇의 생성자는 그렇지 않다. 예를 들어 trait t(i: Int) {} 에서 i 매개변수는 허용되지 않는다.
  - 당신이 이런 질문을 한 첫번째 사람은 아니다. 스택 오버플로우에서 트레잇과 추상 클래스의 비교, 추상 클래스와 트레잇의 차이, 또는 스칼라 프로그래밍: 트레잇냐 아니냐 그것이 문제로다? 등을 참조하라.
-
+- 자바의 Interface 기능을 확장한 개념.
 
 
     trait Car {
@@ -777,11 +782,41 @@
     }
 
 
-    <console>:1: '{' expected but eof found.
+    <console>:3: '{' expected but ';' found.
 
-    package com.twitter.sample
+    object colorHolder {
 
-                              ^
+    ^
+
+
+
+    package a {
+           package b {
+               class A
+               package test {
+                   class ATest
+               }
+           }
+        }
+
+
+    Preprocessor: 'package a {
+
+           package b {
+
+               class A
+
+               package test {
+
+                   class ATest
+
+               }
+
+           }
+
+        }':
+
+    Splitter:0 / End:0 ..."package a "
 
 
 
@@ -810,6 +845,8 @@
 ##패턴 매칭
 - 패턴 매치는 스칼라에서 가장 유용한 기능 중 하나이다. 값에 대해 매칭할 수 있다.
 - 기본적인 컨셉트는 자바의 switch 와 비슷하다. 하지만 자바의 switch 는 constant 값에만 적용할수 있는 반면에 스칼라의 페턴매칭은 constant 값 이외에도 case class, variable, collection 등등 여러가지 유용한 패턴을 사용할수 있다.
+- match도 expression이다. 즉, 값을 반환한다. 명시적으로 break; 를 해야 하는 switch와 달리 match를 찾은 이후엔 계속 matching을 시도하지 않는다. 어떤 패턴에도 매칭되지 않으면 MatchError 예외를 던진다. 예외를 피하려면  case _ =>  를 명시하는 방법을 써야 한다.
+
 
 
     val times = 1
@@ -1031,3 +1068,21 @@
 
       ^
 
+
+#스칼라 연습문제 : 파트1-1회차 발표자 이상열
+
+
+    // Problem 1 match 와 부분적용 문제
+    def fun(a: List[Int]) = a match {
+        case List(0, p, q) => p + q
+        case _ => -1
+    }
+    
+    // println(fun(List(0,10,20)))?
+    // println(fun(List(0,1,2,3)))?
+    // println(fun(List(1,10,20)))?
+
+### Problem 2. 스칼라로 구구단을 짜봅시다!
+- http://devcosin.tistory.com/category/Scala
+
+##사이트 참조 "https://github.com/codeport/scala/wiki/Programming-in-scala"
