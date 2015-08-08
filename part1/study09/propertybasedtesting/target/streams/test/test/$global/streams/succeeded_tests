@@ -1,0 +1,22 @@
+#Successful Tests
+#Thu Aug 06 23:41:27 KST 2015
+org.continuum.vacuum.propertybasedtesting.test.StringSpec=1438868548888
+org.continuum.vacuum.propertybasedtesting.test.TreeSpec=1438872087710
+org.continuum.vacuum.propertybasedtesting.StringSpecification.scala=1438539799831
+org.continuum.vacuum.propertybasedtesting.test.VectorSpec=1438871799944
+org.continuum.vacuum.propertybasedtesting.test.StringSpec-1=1438868549016
+org.continuum.vacuum.propertybasedtesting.test.StringSpec-0=1438868549016
+org.continuum.vacuum.propertybasedtesting.StringSpecification.scala-1=1438539799954
+org.continuum.vacuum.propertybasedtesting.StringSpecification.scala-0=1438539799949
+org.continuum.vacuum.propertybasedtesting.ListSpecification=1438540969563
+org.continuum.vacuum.propertybasedtesting.test.VectorSpec-1=1438871799983
+org.continuum.vacuum.propertybasedtesting.test.VectorSpecification=1438542581014
+org.continuum.vacuum.propertybasedtesting.test.ListSpec=1438869518559
+org.continuum.vacuum.propertybasedtesting.test.VectorSpec-0=1438871799983
+org.continuum.vacuum.propertybasedtesting.StringSpecification-1=1438540159616
+org.continuum.vacuum.propertybasedtesting.StringSpecification=1438540159475
+org.continuum.vacuum.propertybasedtesting.StringSpecification-0=1438540159620
+org.continuum.vacuum.propertybasedtesting.ListSpecification-1=1438540969739
+org.continuum.vacuum.propertybasedtesting.ListSpecification-0=1438540969728
+org.continuum.vacuum.propertybasedtesting.test.ListSpec-1=1438869518689
+org.continuum.vacuum.propertybasedtesting.test.ListSpec-0=1438869518667

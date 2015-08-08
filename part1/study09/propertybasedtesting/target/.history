@@ -1,0 +1,74 @@
+compile
+exit
+console
+compile
+console
+exit
+compile
+consol3
+console
+compile
+run
+compile
+test
+last
+compile
+run
+test
+exit
+compile
+run
+last
+test
+run
+compile
+test
+exit
+compile
+test
+test-only org.continuum.vacuum.propertybasedtesting.ListSpecification
+compile
+reload
+update
+reload
+test-only org.continuum.vacuum.propertybasedtesting.test.VectorSpecification
+compile
+exit
+compile
+run
+test
+test-only org.continuum.vacuum.propertybasedtesting.test.ListSpec
+test-only org.continuum.vacuum.propertybasedtesting.test.VectorSpec
+test-only org.continuum.vacuum.propertybasedtesting.test.TreeSpec
+compile
+test-only org.continuum.vacuum.propertybasedtesting.test.TreeSpec
+compile
+test-only org.continuum.vacuum.propertybasedtesting.test.TreeSpec
+quit
+exit
+compile
+test-only org.continuum.vacuum.propertybasedtesting.test.StringSpec
+test-only org.continuum.vacuum.propertybasedtesting.test.ListSpec
+compile
+test-only org.continuum.vacuum.propertybasedtesting.test.VactorSpec
+reload
+test-only org.continuum.vacuum.propertybasedtesting.test.VactorSpec
+test-only org.continuum.vacuum.propertybasedtesting.test.VectorSpec
+console
+test-only org.continuum.vacuum.propertybasedtesting.test.VectorSpec
+compile
+test-only org.continuum.vacuum.propertybasedtesting.test.VectorSpec
+test-only org.continuum.vacuum.propertybasedtesting.test.TreeSpec
+last
+compile
+test
+exit
+testOnly org.continuum.vacuum.propertybasedtesting.test.TreeSpec
+exit
+console
+compile
+console\
+compile
+console\
+run
+exit
