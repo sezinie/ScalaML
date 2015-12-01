@@ -64,10 +64,10 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 6 |7/18|(함수형) 6. 순수 함수적 상태 |지용기| |
 |   |    |(SparkML) 3. Obtaining, Processing, and Preparing Data with Spark |권갑진||
 |   |    |(함수형) 연습문제 풀이 |지용기||
-|   |    |(스칼라ML) 3. Data Preprocessing (2) |김무성||
+|   |    |(스칼라ML) 3. Data Preprocessing (2) |김무성|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study05/scalaml/03_Data_Preprocessing.ipynb)|
 | 7 |7/25|(스칼라학교) 6. 스칼라의 동시성, Java + Scala |김덕태| |
 |   |    |(스칼라ML) 4. Unsupervised Learning |송근창||
-|   |    |(스칼라ML) 3. Data Preprocessing (3) |김무성||
+|   |    |(스칼라ML) 3. Data Preprocessing (3) |김무성|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study05/scalaml/03_Data_Preprocessing.ipynb)|
 | 8 |8/1 |(함수형) 7. 순수 함수적 병렬성 |지용기| |
 |   |    |(함수형) 연습문제 |지용기||
 |   |    |(SparkML) 4. Building a Recommendation Engine with Spark |임상배||
@@ -85,16 +85,17 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 ## PART II 
 
 * 2015년 9월 12일 ~ 11월 28일
+* 네트워크 이론은 발표자료 링크가 따로 없다면, 바라바시의 자료를 사용함
+  -  http://barabasi.com/networksciencebook/
 
 | 회차   | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | -----  |:------:| :-------------------------------------|:-------:|:---------------------------------------- |
 | 1 |9/12 |(함수형) 12. 적용성 함수자와 순회 가능 함수자 (1) |김덕태||
 |   |    |(스칼라ML) 6. Regression and Regularization (1) |권갑진||
-|   |    |(네트워크) 1. Introduction |김무성||
-|   |    |(네트워크) 1. Introduction |이상열||
+|   |    |(네트워크) 1. Introduction |김무성|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part2/study01/network/01_Introduction.ipynb)|
 |   |    |(놀러온 손님) 해석학 특강 |고희연||
 | 2 |9/19|(함수형) 12. 적용성 함수자와 순회 가능 함수자 (2) |김덕태||
-|   |    |(SparkML) 7. Building a Clustering Model with Spark  |김무성||
+|   |    |(SparkML) 7. Building a Clustering Model with Spark  |김무성|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part2/study02/spark07/07_Building_a_Clustering_Model_with_Spark.ipynb)|
 |   |    |(네트워크) 2. Graph Theory (1) |고희연||
 | 3 |10/3|(함수형) 13. 외부 효과와 입출력 (1) |하헌철| |
 |   |    |(네트워크) 2. Graph Theory (2) |고희연||
@@ -119,5 +120,5 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(네트워크) 4. The Scale-Free Property (2)  |송영숙||
 |   |    |(네트워크) 5. The Barabási-Albert Model (1)  |송영숙||
 | 11|11/28|(스칼라ML) 8. Kernel Models and Support Vector Machines (2) |박경원| |
-|   |    |(SparkML) 9. Advanced Text Processing with Spark  |김무성||
+|   |    |(SparkML) 9. Advanced Text Processing with Spark  |김무성|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part2/study08/sparkml09/9_Advanced_Text_Processing_with_Spark.ipynb)|
 |   |    |(네트워크) 5. The Barabási-Albert Model (2)  |송영숙||
