@@ -75,9 +75,9 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(스칼라ML) 5. Naïve Bayes Classifier |이상열|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study09/scala_ml/5.NaiveBayesClassifiers.ipynb)|
 |   |    |(SparkML) 4. Building a Recommendation Engine with Spark |임상배||
 | 10|8/22|(SparkML) 5. Building a Classification Model with Spark |지용기| |
-| 11|8/29|(함수형) 10. 모노이드 |송근창| |
-|   |    |(함수형) 11. 모나드  |송근창||
-| 12|9/5 |(함수형) 9. 파서 조합기 라이브러리 |김무성| |
+| 11|8/29|(함수형) 10. 모노이드 |송근창|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study11/func/FunctionalProgrammingInScalaCh10.Monoids.ipynb) |
+|   |    |(함수형) 11. 모나드  |송근창|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study11/func/FunctionalProgrammingInScalaCh11.Monad.ipynb)|
+| 12|9/5 |(함수형) 9. 파서 조합기 라이브러리 |김무성|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study12/func/09_parsing.ipynb) |
 |   |    |(통계 토막지식) 실험설계와 오즈비(odds ratio) |하헌철||
 |   |    |(SparkML) 6. Building a Regression Model with Spark |최정원||
 
