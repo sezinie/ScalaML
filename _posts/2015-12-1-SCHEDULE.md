@@ -71,8 +71,8 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 8 |8/1 |(함수형) 7. 순수 함수적 병렬성 |지용기| |
 |   |    |(함수형) 연습문제 |지용기||
 |   |    |(SparkML) 4. Building a Recommendation Engine with Spark |임상배||
-| 9 |8/8 |(함수형) 8. 속성 기반 검사 |송근창| |
-|   |    |(스칼라ML) 5. Naïve Bayes Classifier |이상열||
+| 9 |8/8 |(함수형) 8. 속성 기반 검사 |송근창|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study09/func/FunctionalProgrammingInScalaCh8.Property-based%20testing.ipynb) |
+|   |    |(스칼라ML) 5. Naïve Bayes Classifier |이상열[note]http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study09/scala_ml/5.NaiveBayesClassifiers.ipynb()||
 |   |    |(SparkML) 4. Building a Recommendation Engine with Spark |임상배||
 | 10|8/22|(SparkML) 5. Building a Classification Model with Spark |지용기| |
 | 11|8/29|(함수형) 10. 모노이드 |송근창| |
