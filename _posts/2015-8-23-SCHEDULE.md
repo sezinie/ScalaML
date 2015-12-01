@@ -39,12 +39,18 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(SparkML) 3. Obtaining, Processing, and Preparing Data with Spark |권갑진||
 |   |    |(함수형) 연습문제 풀이 |지용기||
 |   |    |(스칼라ML) 3. Data Preprocessing (2) |김무성||
-| 6 |7/25|(스칼라학교) 6. 스칼라의 동시성, Java + Scala |김덕태| |
+| 7 |7/25|(스칼라학교) 6. 스칼라의 동시성, Java + Scala |김덕태| |
 |   |    |(스칼라ML) 4. Unsupervised Learning |송근창||
 |   |    |(스칼라ML) 3. Data Preprocessing (3) |김무성||
-| 7 |8/1 |(함수형) 7. 순수 함수적 병렬성 |지용기| |
+| 8 |8/1 |(함수형) 7. 순수 함수적 병렬성 |지용기| |
 |   |    |(함수형) 연습문제 |지용기||
 |   |    |(SparkML) 4. Building a Recommendation Engine with Spark |임상배||
-| 8 |8/8 |(함수형) 8. 속성 기반 검사 |송근창| |
+| 9 |8/8 |(함수형) 8. 속성 기반 검사 |송근창| |
 |   |    |(스칼라ML) 5. Naïve Bayes Classifier |이상열||
 |   |    |(SparkML) 4. Building a Recommendation Engine with Spark |임상배||
+| 10|8/22|(SparkML) 5. Building a Classification Model with Spark |지용기| |
+| 11|8/29|(함수형) 10. 모노이드 |송근창| |
+|   |    |(함수형) 11. 모나드  |송근창||
+| 12|9/5 |(함수형) 9. 파서 조합기 라이브러리 |김무성| |
+|   |    |(통계 토막지식) 실험설계와 오즈비(odds ratio) |하헌철||
+|   |    |(SparkML) 6. Building a Regression Model with Spark |최정원||
