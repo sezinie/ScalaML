@@ -12,7 +12,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 
 ## PART I 
 
-* 2015년 6월 13일 ~ 9월 12일
+* 2015년 6월 13일 ~ 9월 5일
 
 | 회차   | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | -----  |:------:| :-------------------------------------|:-------:|:---------------------------------------- |
@@ -54,3 +54,44 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 12|9/5 |(함수형) 9. 파서 조합기 라이브러리 |김무성| |
 |   |    |(통계 토막지식) 실험설계와 오즈비(odds ratio) |하헌철||
 |   |    |(SparkML) 6. Building a Regression Model with Spark |최정원||
+
+
+## PART II 
+
+* 2015년 9월 12일 ~ 11월 28일
+
+| 회차   | 일시   | 내용                                  | 발표자  |              발표자료                    |
+| -----  |:------:| :-------------------------------------|:-------:|:---------------------------------------- |
+| 1 |9/12 |(함수형) 12. 적용성 함수자와 순회 가능 함수자 (1) |김덕태||
+|   |    |(스칼라ML) 6. Regression and Regularization (1) |권갑진||
+|   |    |(네트워크) 1. Introduction |김무성||
+|   |    |(네트워크) 1. Introduction |이상열||
+|   |    |(놀러온 손님) 해석학 특강 |고희연||
+| 2 |9/19|(함수형) 12. 적용성 함수자와 순회 가능 함수자 (2) |김덕태||
+|   |    |(SparkML) 7. Building a Clustering Model with Spark  |김무성||
+|   |    |(네트워크) 2. Graph Theory (1) |고희연||
+| 3 |10/3|(함수형) 13. 외부 효과와 입출력 (1) |하헌철| |
+|   |    |(네트워크) 2. Graph Theory (2) |고희연||
+|   |    |(특강) Humble introduction to category theory in Haskell |이종수||
+| 4 |10/10 |(함수형) 12. 적용성 함수자와 순회 가능 함수자 (3) |김덕태| |
+|   |    | (함수형) 13. 외부 효과와 입출력 (2) |하헌철||
+|   |    | (스칼라ML) 6. Regression and Regularization (2)  |권갑진||
+|   |    | (네트워크) 3. Random Networks (1) |심상진||
+| 5 |10/17|(함수형) 12. 적용성 함수자와 순회 가능 함수자 (4) |김덕태| |
+|   |    |(스칼라ML) 6. Regression and Regularization (3) |권갑진||
+| 6 |10/24|(함수형) 14. 지역 효과와 변이 가능 상태  |송근창| |
+|   |    |(SparkML) 3. Obtaining, Processing, and Preparing Data with Spark |권갑진||
+|   |    |(SparkML) 8. Dimensionality Reduction with Spark |지용기||
+|   |    |(네트워크) 3. Random Networks (2) |심상진||
+| 7 |10/31|(함수형) 12. 적용성 함수자와 순회 가능 함수자 (4): 모나드로~~ |김덕태| |
+| 8 |11/7 |(함수형) 15. 스트림 처리와 점진적 입출력 |하헌철| |
+|   |    | (스칼라ML) 7. Sequential Data Models (1) |김무성||
+|   |    | (네트워크) 4. The Scale-Free Property (1) |송영숙||
+| 9 |11/14 |(스칼라ML) 7. Sequential Data Models (2) |김무성| |
+|   |    |(SparkML) 스파크 스트리밍 특강 |지용기||
+| 10|11/21|(스칼라ML) 8. Kernel Models and Support Vector Machines (1) |박경원| |
+|   |    |(네트워크) 4. The Scale-Free Property (2)  |송영숙||
+|   |    |(네트워크) 5. The Barabási-Albert Model (1)  |송영숙||
+| 11|11/28|(스칼라ML) 8. Kernel Models and Support Vector Machines (2) |박경원| |
+|   |    |(SparkML) 9. Advanced Text Processing with Spark  |김무성||
+|   |    |(네트워크) 5. The Barabási-Albert Model (2)  |송영숙||
