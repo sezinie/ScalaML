@@ -55,12 +55,12 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(함수형) 3. 함수적 자료구조 |하헌철||
 |   |    |(스칼라ML) 2. Hello World! |최정원|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study03/ScalaML/Ch2.%20H...hello%20World.ipynb)|
 |   |    |(함수형 연습문제) |최경준|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study03/ex/Third%20Week%20-%20Functional%20Programming%20Exercise.ipynb)|
-| 4 |7/4 |(함수형) 4. 예외를 이용하지 않은 오류 처리 |오재훈| |
+| 4 |7/4 |(함수형) 4. 예외를 이용하지 않은 오류 처리 |오재훈|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study04/func/Functional%20Chapter%204%20-%20Error%20Handling%20without%20Exception.ipynb) |
 |   |    |(SparkML) 2. Designing a Machine Learning System |임상배||
 | 5 |7/11|(스칼라학교) 4. SBT |조수관| |
-|   |    |(스칼라학교) 5. 컬렉션(계속), specs로 테스트하기 |김명철||
-|   |    |(함수형) 5. 엄격성과 나태성 |최경준||
-|   |    |(스칼라ML) 3. Data Preprocessing (1) |김무성||
+|   |    |(스칼라학교) 5. 컬렉션(계속), specs로 테스트하기 |김명철|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study05/scala_basic/ch5_Collection2%2C%20Specs.ipynb)|
+|   |    |(함수형) 5. 엄격성과 나태성 |최경준|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study05/func/Chapter5%20-%20Strictness%20and%20Laziness.ipynb)|
+|   |    |(스칼라ML) 3. Data Preprocessing (1) |김무성|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part1/study05/scalaml/03_Data_Preprocessing.ipynb)|
 | 6 |7/18|(함수형) 6. 순수 함수적 상태 |지용기| |
 |   |    |(SparkML) 3. Obtaining, Processing, and Preparing Data with Spark |권갑진||
 |   |    |(함수형) 연습문제 풀이 |지용기||
