@@ -3,11 +3,16 @@ layout: post
 title: 스터디 일정 & 커리큘럼 & 발표자료
 ---
 
-진행 중 : PART I
+
+진행 중 : PART III
+
+-------------
+
+완료 : PART I ~ II
 
 ## PART I 
 
-* 2015년 6월 ~
+* 2015년 6월 13일 ~ 9월 12일
 
 | 회차   | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | -----  |:------:| :-------------------------------------|:-------:|:---------------------------------------- |
@@ -27,6 +32,19 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 4 |7/4 |(함수형) 4. 예외를 이용하지 않은 오류 처리 |오재훈| |
 |   |    |(SparkML) 2. Designing a Machine Learning System |임상배||
 | 5 |7/11|(스칼라학교) 4. SBT |조수관| |
-|   |    | (스칼라학교) 5. 컬렉션(계속), specs로 테스트하기 |김명철||
+|   |    |(스칼라학교) 5. 컬렉션(계속), specs로 테스트하기 |김명철||
 |   |    |(함수형) 5. 엄격성과 나태성 |최경준||
-|   |    |(스칼라ML) 3. Data Preprocessing |김무성||
+|   |    |(스칼라ML) 3. Data Preprocessing (1) |김무성||
+| 6 |7/18|(함수형) 6. 순수 함수적 상태 |지용기| |
+|   |    |(SparkML) 3. Obtaining, Processing, and Preparing Data with Spark |권갑진||
+|   |    |(함수형) 연습문제 풀이 |지용기||
+|   |    |(스칼라ML) 3. Data Preprocessing (2) |김무성||
+| 6 |7/25|(스칼라학교) 6. 스칼라의 동시성, Java + Scala |김덕태| |
+|   |    |(스칼라ML) 4. Unsupervised Learning |송근창||
+|   |    |(스칼라ML) 3. Data Preprocessing (3) |김무성||
+| 7 |8/1 |(함수형) 7. 순수 함수적 병렬성 |지용기| |
+|   |    |(함수형) 연습문제 |지용기||
+|   |    |(SparkML) 4. Building a Recommendation Engine with Spark |임상배||
+| 8 |8/8 |(함수형) 8. 속성 기반 검사 |송근창| |
+|   |    |(스칼라ML) 5. Naïve Bayes Classifier |이상열||
+|   |    |(SparkML) 4. Building a Recommendation Engine with Spark |임상배||
