@@ -13,11 +13,11 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 회차   | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | -----  |:------:| :-------------------------------------|:-------:|:---------------------------------------- |
 | 1 |12/5 |(SparkGraph) 1: Getting Started with Spark and GraphX |지용기||
-|   |    |(SparkStreaming) 2. Architecture and Components of Spark and Spark Streaming |||
+|   |    |(SparkStreaming) 2. Architecture and Components of Spark and Spark Streaming |지용기||
 |   |    |(네트워크) 6. Evolving Networks  |김무성||
-| 2 |12/12|(SparkGraph) 2: Building and Exploring Graphs |||
-|   |    |(SparkStreaming) 3.Processing Distributed Log Files in Real Time  |||
-|   |    |(네트워크) 7. Degree Correlations  |||
+| 2 |12/12|(SparkGraph) 2: Building and Exploring Graphs |박세진|[note](http://nbviewer.ipython.org/github/psygrammer/ScalaML/blob/master/part3/study02/SparkGraphx_02_sejin.ipynb)|
+|   |    |(SparkStreaming) 3.Processing Distributed Log Files in Real Time  |박재도||
+|   |    |(네트워크) 7. Degree Correlations  |김무성||
 | 3 |12/19|(SparkGraph) 3: Graph Analysis and Visualization || |
 |   |    |(SparkStreaming) 4. Applying Transformations to Streaming Data |||
 |   |    |(네트워크) 8. Network Robustenss |||
